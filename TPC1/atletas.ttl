@@ -1,0 +1,4861 @@
+@prefix : <http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1> .
+
+<http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1#Atleta
+:Atleta rdf:type owl:Class .
+
+###  http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1#Exame
+:Exame rdf:type owl:Class .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/uminho/mirtilo/rpcw/2025/tpc1#temExame
+:temExame rdf:type owl:ObjectProperty ;
+        rdfs:domain :Atleta ;
+        rdfs:range :Exame .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+:temId rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Atleta ;
+      rdfs:range xsd:string .
+
+:temIndex rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Atleta ;
+          rdfs:range xsd:int .
+
+:temData rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Atleta ;
+         rdfs:range xsd:dateTime .
+
+:temApelido rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Atleta ;
+            rdfs:range xsd:string .
+
+:temPrimeiroNome rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Atleta ;
+                 rdfs:range xsd:string .
+
+:temNome rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Atleta ;
+         rdfs:range xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  a_60b3ee0ee00725274024d5a2
+:a_60b3ee0ee00725274024d5a2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee00725274024d5a2";
+             :temIndex "0";
+             :temData "2020-07-27";
+             :temApelido "Terrell" ;
+             :temPrimeiroNome "Emily" ;
+             :temNome "Emily Terrell";
+             :temExame :e_60b3ee0ee00725274024d5a2 .
+
+###  e_60b3ee0ee00725274024d5a2
+:e_60b3ee0ee00725274024d5a2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-27" .
+
+###  a_60b3ee0e62b59d062f2018a3
+:a_60b3ee0e62b59d062f2018a3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e62b59d062f2018a3";
+             :temIndex "1";
+             :temData "2019-01-17";
+             :temApelido "Hartman" ;
+             :temPrimeiroNome "Medina" ;
+             :temNome "Medina Hartman";
+             :temExame :e_60b3ee0e62b59d062f2018a3 .
+
+###  e_60b3ee0e62b59d062f2018a3
+:e_60b3ee0e62b59d062f2018a3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-17" .
+
+###  a_60b3ee0e01ada8b23fc63b31
+:a_60b3ee0e01ada8b23fc63b31 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e01ada8b23fc63b31";
+             :temIndex "2";
+             :temData "2020-04-09";
+             :temApelido "Rivas" ;
+             :temPrimeiroNome "Andrews" ;
+             :temNome "Andrews Rivas";
+             :temExame :e_60b3ee0e01ada8b23fc63b31 .
+
+###  e_60b3ee0e01ada8b23fc63b31
+:e_60b3ee0e01ada8b23fc63b31 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-09" .
+
+###  a_60b3ee0e6ab8471af29e2014
+:a_60b3ee0e6ab8471af29e2014 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e6ab8471af29e2014";
+             :temIndex "3";
+             :temData "2020-06-12";
+             :temApelido "Combs" ;
+             :temPrimeiroNome "Marcella" ;
+             :temNome "Marcella Combs";
+             :temExame :e_60b3ee0e6ab8471af29e2014 .
+
+###  e_60b3ee0e6ab8471af29e2014
+:e_60b3ee0e6ab8471af29e2014 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-12" .
+
+###  a_60b3ee0ed16d4695ffdf5f17
+:a_60b3ee0ed16d4695ffdf5f17 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ed16d4695ffdf5f17";
+             :temIndex "4";
+             :temData "2019-09-13";
+             :temApelido "Buckner" ;
+             :temPrimeiroNome "Mendoza" ;
+             :temNome "Mendoza Buckner";
+             :temExame :e_60b3ee0ed16d4695ffdf5f17 .
+
+###  e_60b3ee0ed16d4695ffdf5f17
+:e_60b3ee0ed16d4695ffdf5f17 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-13" .
+
+###  a_60b3ee0e2707c21708cc3418
+:a_60b3ee0e2707c21708cc3418 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e2707c21708cc3418";
+             :temIndex "5";
+             :temData "2021-04-25";
+             :temApelido "Copeland" ;
+             :temPrimeiroNome "Sellers" ;
+             :temNome "Sellers Copeland";
+             :temExame :e_60b3ee0e2707c21708cc3418 .
+
+###  e_60b3ee0e2707c21708cc3418
+:e_60b3ee0e2707c21708cc3418 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-25" .
+
+###  a_60b3ee0e4a1e0233af16ac8c
+:a_60b3ee0e4a1e0233af16ac8c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e4a1e0233af16ac8c";
+             :temIndex "6";
+             :temData "2020-12-29";
+             :temApelido "Stokes" ;
+             :temPrimeiroNome "Bernard" ;
+             :temNome "Bernard Stokes";
+             :temExame :e_60b3ee0e4a1e0233af16ac8c .
+
+###  e_60b3ee0e4a1e0233af16ac8c
+:e_60b3ee0e4a1e0233af16ac8c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-29" .
+
+###  a_60b3ee0ed5225a2a93a69c3a
+:a_60b3ee0ed5225a2a93a69c3a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ed5225a2a93a69c3a";
+             :temIndex "7";
+             :temData "2021-03-04";
+             :temApelido "Raymond" ;
+             :temPrimeiroNome "Alfreda" ;
+             :temNome "Alfreda Raymond";
+             :temExame :e_60b3ee0ed5225a2a93a69c3a .
+
+###  e_60b3ee0ed5225a2a93a69c3a
+:e_60b3ee0ed5225a2a93a69c3a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-04" .
+
+###  a_60b3ee0e9488e742d1600f58
+:a_60b3ee0e9488e742d1600f58 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e9488e742d1600f58";
+             :temIndex "8";
+             :temData "2021-05-29";
+             :temApelido "Green" ;
+             :temPrimeiroNome "Alston" ;
+             :temNome "Alston Green";
+             :temExame :e_60b3ee0e9488e742d1600f58 .
+
+###  e_60b3ee0e9488e742d1600f58
+:e_60b3ee0e9488e742d1600f58 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-29" .
+
+###  a_60b3ee0ef8b2c3b732bc0d82
+:a_60b3ee0ef8b2c3b732bc0d82 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ef8b2c3b732bc0d82";
+             :temIndex "9";
+             :temData "2019-10-27";
+             :temApelido "Mccarthy" ;
+             :temPrimeiroNome "Paige" ;
+             :temNome "Paige Mccarthy";
+             :temExame :e_60b3ee0ef8b2c3b732bc0d82 .
+
+###  e_60b3ee0ef8b2c3b732bc0d82
+:e_60b3ee0ef8b2c3b732bc0d82 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-27" .
+
+###  a_60b3ee0ec14a4ad7e917ed36
+:a_60b3ee0ec14a4ad7e917ed36 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ec14a4ad7e917ed36";
+             :temIndex "10";
+             :temData "2020-08-09";
+             :temApelido "Gill" ;
+             :temPrimeiroNome "Claudine" ;
+             :temNome "Claudine Gill";
+             :temExame :e_60b3ee0ec14a4ad7e917ed36 .
+
+###  e_60b3ee0ec14a4ad7e917ed36
+:e_60b3ee0ec14a4ad7e917ed36 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-09" .
+
+###  a_60b3ee0ecf1638e25755912c
+:a_60b3ee0ecf1638e25755912c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ecf1638e25755912c";
+             :temIndex "11";
+             :temData "2019-12-03";
+             :temApelido "Calhoun" ;
+             :temPrimeiroNome "Summer" ;
+             :temNome "Summer Calhoun";
+             :temExame :e_60b3ee0ecf1638e25755912c .
+
+###  e_60b3ee0ecf1638e25755912c
+:e_60b3ee0ecf1638e25755912c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-03" .
+
+###  a_60b3ee0e2fac3611c3cd7291
+:a_60b3ee0e2fac3611c3cd7291 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e2fac3611c3cd7291";
+             :temIndex "12";
+             :temData "2020-01-22";
+             :temApelido "David" ;
+             :temPrimeiroNome "Slater" ;
+             :temNome "Slater David";
+             :temExame :e_60b3ee0e2fac3611c3cd7291 .
+
+###  e_60b3ee0e2fac3611c3cd7291
+:e_60b3ee0e2fac3611c3cd7291 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-22" .
+
+###  a_60b3ee0e1f3d25c518678bd7
+:a_60b3ee0e1f3d25c518678bd7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e1f3d25c518678bd7";
+             :temIndex "13";
+             :temData "2020-09-03";
+             :temApelido "Boyd" ;
+             :temPrimeiroNome "Ophelia" ;
+             :temNome "Ophelia Boyd";
+             :temExame :e_60b3ee0e1f3d25c518678bd7 .
+
+###  e_60b3ee0e1f3d25c518678bd7
+:e_60b3ee0e1f3d25c518678bd7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-03" .
+
+###  a_60b3ee0ee62c8f8a846459ea
+:a_60b3ee0ee62c8f8a846459ea rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee62c8f8a846459ea";
+             :temIndex "14";
+             :temData "2019-08-02";
+             :temApelido "Singleton" ;
+             :temPrimeiroNome "Evans" ;
+             :temNome "Evans Singleton";
+             :temExame :e_60b3ee0ee62c8f8a846459ea .
+
+###  e_60b3ee0ee62c8f8a846459ea
+:e_60b3ee0ee62c8f8a846459ea rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-02" .
+
+###  a_60b3ee0e0539642b38645cb3
+:a_60b3ee0e0539642b38645cb3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e0539642b38645cb3";
+             :temIndex "15";
+             :temData "2020-08-07";
+             :temApelido "Bishop" ;
+             :temPrimeiroNome "Church" ;
+             :temNome "Church Bishop";
+             :temExame :e_60b3ee0e0539642b38645cb3 .
+
+###  e_60b3ee0e0539642b38645cb3
+:e_60b3ee0e0539642b38645cb3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-07" .
+
+###  a_60b3ee0e3f327a6ba71f77b0
+:a_60b3ee0e3f327a6ba71f77b0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3f327a6ba71f77b0";
+             :temIndex "16";
+             :temData "2019-07-13";
+             :temApelido "Bennett" ;
+             :temPrimeiroNome "Woodard" ;
+             :temNome "Woodard Bennett";
+             :temExame :e_60b3ee0e3f327a6ba71f77b0 .
+
+###  e_60b3ee0e3f327a6ba71f77b0
+:e_60b3ee0e3f327a6ba71f77b0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-13" .
+
+###  a_60b3ee0e30fc3c2042f955eb
+:a_60b3ee0e30fc3c2042f955eb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e30fc3c2042f955eb";
+             :temIndex "17";
+             :temData "2019-09-15";
+             :temApelido "Michael" ;
+             :temPrimeiroNome "Vasquez" ;
+             :temNome "Vasquez Michael";
+             :temExame :e_60b3ee0e30fc3c2042f955eb .
+
+###  e_60b3ee0e30fc3c2042f955eb
+:e_60b3ee0e30fc3c2042f955eb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-15" .
+
+###  a_60b3ee0ee90bdefcc8703185
+:a_60b3ee0ee90bdefcc8703185 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee90bdefcc8703185";
+             :temIndex "18";
+             :temData "2019-09-04";
+             :temApelido "Maxwell" ;
+             :temPrimeiroNome "Holloway" ;
+             :temNome "Holloway Maxwell";
+             :temExame :e_60b3ee0ee90bdefcc8703185 .
+
+###  e_60b3ee0ee90bdefcc8703185
+:e_60b3ee0ee90bdefcc8703185 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-04" .
+
+###  a_60b3ee0e559fb2fd0142f64c
+:a_60b3ee0e559fb2fd0142f64c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e559fb2fd0142f64c";
+             :temIndex "19";
+             :temData "2020-02-04";
+             :temApelido "Barber" ;
+             :temPrimeiroNome "Michele" ;
+             :temNome "Michele Barber";
+             :temExame :e_60b3ee0e559fb2fd0142f64c .
+
+###  e_60b3ee0e559fb2fd0142f64c
+:e_60b3ee0e559fb2fd0142f64c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-04" .
+
+###  a_60b3ee0eb2087f8cccef830d
+:a_60b3ee0eb2087f8cccef830d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0eb2087f8cccef830d";
+             :temIndex "20";
+             :temData "2020-03-01";
+             :temApelido "Burton" ;
+             :temPrimeiroNome "Chambers" ;
+             :temNome "Chambers Burton";
+             :temExame :e_60b3ee0eb2087f8cccef830d .
+
+###  e_60b3ee0eb2087f8cccef830d
+:e_60b3ee0eb2087f8cccef830d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-01" .
+
+###  a_60b3ee0ea0dc6768a6ca7192
+:a_60b3ee0ea0dc6768a6ca7192 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea0dc6768a6ca7192";
+             :temIndex "21";
+             :temData "2021-03-26";
+             :temApelido "Goodman" ;
+             :temPrimeiroNome "Massey" ;
+             :temNome "Massey Goodman";
+             :temExame :e_60b3ee0ea0dc6768a6ca7192 .
+
+###  e_60b3ee0ea0dc6768a6ca7192
+:e_60b3ee0ea0dc6768a6ca7192 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-26" .
+
+###  a_60b3ee0ee3d27702cac0b7cd
+:a_60b3ee0ee3d27702cac0b7cd rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee3d27702cac0b7cd";
+             :temIndex "22";
+             :temData "2021-02-26";
+             :temApelido "Cameron" ;
+             :temPrimeiroNome "Klein" ;
+             :temNome "Klein Cameron";
+             :temExame :e_60b3ee0ee3d27702cac0b7cd .
+
+###  e_60b3ee0ee3d27702cac0b7cd
+:e_60b3ee0ee3d27702cac0b7cd rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-26" .
+
+###  a_60b3ee0e23a38b2da3f0a76e
+:a_60b3ee0e23a38b2da3f0a76e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e23a38b2da3f0a76e";
+             :temIndex "23";
+             :temData "2020-07-11";
+             :temApelido "Mueller" ;
+             :temPrimeiroNome "Lambert" ;
+             :temNome "Lambert Mueller";
+             :temExame :e_60b3ee0e23a38b2da3f0a76e .
+
+###  e_60b3ee0e23a38b2da3f0a76e
+:e_60b3ee0e23a38b2da3f0a76e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-11" .
+
+###  a_60b3ee0e172e761f8d52c213
+:a_60b3ee0e172e761f8d52c213 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e172e761f8d52c213";
+             :temIndex "24";
+             :temData "2021-02-15";
+             :temApelido "Drake" ;
+             :temPrimeiroNome "Ewing" ;
+             :temNome "Ewing Drake";
+             :temExame :e_60b3ee0e172e761f8d52c213 .
+
+###  e_60b3ee0e172e761f8d52c213
+:e_60b3ee0e172e761f8d52c213 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-15" .
+
+###  a_60b3ee0e2573d42d411cc591
+:a_60b3ee0e2573d42d411cc591 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e2573d42d411cc591";
+             :temIndex "25";
+             :temData "2019-01-04";
+             :temApelido "Manning" ;
+             :temPrimeiroNome "Lester" ;
+             :temNome "Lester Manning";
+             :temExame :e_60b3ee0e2573d42d411cc591 .
+
+###  e_60b3ee0e2573d42d411cc591
+:e_60b3ee0e2573d42d411cc591 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-04" .
+
+###  a_60b3ee0ee95a95d0c9bc3e5f
+:a_60b3ee0ee95a95d0c9bc3e5f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee95a95d0c9bc3e5f";
+             :temIndex "26";
+             :temData "2020-04-16";
+             :temApelido "Fowler" ;
+             :temPrimeiroNome "Nina" ;
+             :temNome "Nina Fowler";
+             :temExame :e_60b3ee0ee95a95d0c9bc3e5f .
+
+###  e_60b3ee0ee95a95d0c9bc3e5f
+:e_60b3ee0ee95a95d0c9bc3e5f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-16" .
+
+###  a_60b3ee0effaf9b013df4203d
+:a_60b3ee0effaf9b013df4203d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0effaf9b013df4203d";
+             :temIndex "27";
+             :temData "2020-07-25";
+             :temApelido "Shaw" ;
+             :temPrimeiroNome "Lynn" ;
+             :temNome "Lynn Shaw";
+             :temExame :e_60b3ee0effaf9b013df4203d .
+
+###  e_60b3ee0effaf9b013df4203d
+:e_60b3ee0effaf9b013df4203d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-25" .
+
+###  a_60b3ee0ee3f58fda00f17cc6
+:a_60b3ee0ee3f58fda00f17cc6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee3f58fda00f17cc6";
+             :temIndex "28";
+             :temData "2021-01-13";
+             :temApelido "Blake" ;
+             :temPrimeiroNome "Betty" ;
+             :temNome "Betty Blake";
+             :temExame :e_60b3ee0ee3f58fda00f17cc6 .
+
+###  e_60b3ee0ee3f58fda00f17cc6
+:e_60b3ee0ee3f58fda00f17cc6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-13" .
+
+###  a_60b3ee0ee7cb2701483df2c9
+:a_60b3ee0ee7cb2701483df2c9 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee7cb2701483df2c9";
+             :temIndex "29";
+             :temData "2020-10-23";
+             :temApelido "Roth" ;
+             :temPrimeiroNome "Oneill" ;
+             :temNome "Oneill Roth";
+             :temExame :e_60b3ee0ee7cb2701483df2c9 .
+
+###  e_60b3ee0ee7cb2701483df2c9
+:e_60b3ee0ee7cb2701483df2c9 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-23" .
+
+###  a_60b3ee0e74703dea724376f8
+:a_60b3ee0e74703dea724376f8 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e74703dea724376f8";
+             :temIndex "30";
+             :temData "2019-06-03";
+             :temApelido "Miles" ;
+             :temPrimeiroNome "Roxanne" ;
+             :temNome "Roxanne Miles";
+             :temExame :e_60b3ee0e74703dea724376f8 .
+
+###  e_60b3ee0e74703dea724376f8
+:e_60b3ee0e74703dea724376f8 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-03" .
+
+###  a_60b3ee0ef3bfaf77b4e67849
+:a_60b3ee0ef3bfaf77b4e67849 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ef3bfaf77b4e67849";
+             :temIndex "31";
+             :temData "2019-04-20";
+             :temApelido "Adams" ;
+             :temPrimeiroNome "Cecelia" ;
+             :temNome "Cecelia Adams";
+             :temExame :e_60b3ee0ef3bfaf77b4e67849 .
+
+###  e_60b3ee0ef3bfaf77b4e67849
+:e_60b3ee0ef3bfaf77b4e67849 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-20" .
+
+###  a_60b3ee0e54b12900f5e6c314
+:a_60b3ee0e54b12900f5e6c314 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e54b12900f5e6c314";
+             :temIndex "32";
+             :temData "2019-12-12";
+             :temApelido "Jacobs" ;
+             :temPrimeiroNome "Irma" ;
+             :temNome "Irma Jacobs";
+             :temExame :e_60b3ee0e54b12900f5e6c314 .
+
+###  e_60b3ee0e54b12900f5e6c314
+:e_60b3ee0e54b12900f5e6c314 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-12" .
+
+###  a_60b3ee0ef050e91efe68a668
+:a_60b3ee0ef050e91efe68a668 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ef050e91efe68a668";
+             :temIndex "33";
+             :temData "2020-12-23";
+             :temApelido "Noel" ;
+             :temPrimeiroNome "Angelia" ;
+             :temNome "Angelia Noel";
+             :temExame :e_60b3ee0ef050e91efe68a668 .
+
+###  e_60b3ee0ef050e91efe68a668
+:e_60b3ee0ef050e91efe68a668 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-23" .
+
+###  a_60b3ee0e536b83d9d562f9c8
+:a_60b3ee0e536b83d9d562f9c8 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e536b83d9d562f9c8";
+             :temIndex "34";
+             :temData "2020-06-02";
+             :temApelido "Shaffer" ;
+             :temPrimeiroNome "Sallie" ;
+             :temNome "Sallie Shaffer";
+             :temExame :e_60b3ee0e536b83d9d562f9c8 .
+
+###  e_60b3ee0e536b83d9d562f9c8
+:e_60b3ee0e536b83d9d562f9c8 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-02" .
+
+###  a_60b3ee0e6dbcbe60effe125d
+:a_60b3ee0e6dbcbe60effe125d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e6dbcbe60effe125d";
+             :temIndex "35";
+             :temData "2020-06-22";
+             :temApelido "Bonner" ;
+             :temPrimeiroNome "Jordan" ;
+             :temNome "Jordan Bonner";
+             :temExame :e_60b3ee0e6dbcbe60effe125d .
+
+###  e_60b3ee0e6dbcbe60effe125d
+:e_60b3ee0e6dbcbe60effe125d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-22" .
+
+###  a_60b3ee0e8b4f7dca2601ddfc
+:a_60b3ee0e8b4f7dca2601ddfc rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e8b4f7dca2601ddfc";
+             :temIndex "36";
+             :temData "2019-12-17";
+             :temApelido "Sexton" ;
+             :temPrimeiroNome "Bartlett" ;
+             :temNome "Bartlett Sexton";
+             :temExame :e_60b3ee0e8b4f7dca2601ddfc .
+
+###  e_60b3ee0e8b4f7dca2601ddfc
+:e_60b3ee0e8b4f7dca2601ddfc rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-17" .
+
+###  a_60b3ee0e59411e4e9d97d70a
+:a_60b3ee0e59411e4e9d97d70a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e59411e4e9d97d70a";
+             :temIndex "37";
+             :temData "2019-07-27";
+             :temApelido "Stewart" ;
+             :temPrimeiroNome "Opal" ;
+             :temNome "Opal Stewart";
+             :temExame :e_60b3ee0e59411e4e9d97d70a .
+
+###  e_60b3ee0e59411e4e9d97d70a
+:e_60b3ee0e59411e4e9d97d70a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-27" .
+
+###  a_60b3ee0ee78616dd040e4dca
+:a_60b3ee0ee78616dd040e4dca rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee78616dd040e4dca";
+             :temIndex "38";
+             :temData "2020-11-26";
+             :temApelido "Glover" ;
+             :temPrimeiroNome "Ola" ;
+             :temNome "Ola Glover";
+             :temExame :e_60b3ee0ee78616dd040e4dca .
+
+###  e_60b3ee0ee78616dd040e4dca
+:e_60b3ee0ee78616dd040e4dca rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-26" .
+
+###  a_60b3ee0ea3043984230726fc
+:a_60b3ee0ea3043984230726fc rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea3043984230726fc";
+             :temIndex "39";
+             :temData "2019-11-21";
+             :temApelido "York" ;
+             :temPrimeiroNome "Shelia" ;
+             :temNome "Shelia York";
+             :temExame :e_60b3ee0ea3043984230726fc .
+
+###  e_60b3ee0ea3043984230726fc
+:e_60b3ee0ea3043984230726fc rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-11-21" .
+
+###  a_60b3ee0e242cedae88a5f12c
+:a_60b3ee0e242cedae88a5f12c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e242cedae88a5f12c";
+             :temIndex "40";
+             :temData "2019-07-31";
+             :temApelido "Ratliff" ;
+             :temPrimeiroNome "Raquel" ;
+             :temNome "Raquel Ratliff";
+             :temExame :e_60b3ee0e242cedae88a5f12c .
+
+###  e_60b3ee0e242cedae88a5f12c
+:e_60b3ee0e242cedae88a5f12c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-31" .
+
+###  a_60b3ee0e846df12b8f8e750d
+:a_60b3ee0e846df12b8f8e750d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e846df12b8f8e750d";
+             :temIndex "41";
+             :temData "2019-09-14";
+             :temApelido "Weeks" ;
+             :temPrimeiroNome "Burke" ;
+             :temNome "Burke Weeks";
+             :temExame :e_60b3ee0e846df12b8f8e750d .
+
+###  e_60b3ee0e846df12b8f8e750d
+:e_60b3ee0e846df12b8f8e750d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-14" .
+
+###  a_60b3ee0e3f165afa6f23a0eb
+:a_60b3ee0e3f165afa6f23a0eb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3f165afa6f23a0eb";
+             :temIndex "42";
+             :temData "2019-04-30";
+             :temApelido "French" ;
+             :temPrimeiroNome "Best" ;
+             :temNome "Best French";
+             :temExame :e_60b3ee0e3f165afa6f23a0eb .
+
+###  e_60b3ee0e3f165afa6f23a0eb
+:e_60b3ee0e3f165afa6f23a0eb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-30" .
+
+###  a_60b3ee0e0ee0185da196c9ab
+:a_60b3ee0e0ee0185da196c9ab rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e0ee0185da196c9ab";
+             :temIndex "43";
+             :temData "2019-10-08";
+             :temApelido "Alvarez" ;
+             :temPrimeiroNome "Fowler" ;
+             :temNome "Fowler Alvarez";
+             :temExame :e_60b3ee0e0ee0185da196c9ab .
+
+###  e_60b3ee0e0ee0185da196c9ab
+:e_60b3ee0e0ee0185da196c9ab rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-08" .
+
+###  a_60b3ee0ecfbe9bf6149ba53b
+:a_60b3ee0ecfbe9bf6149ba53b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ecfbe9bf6149ba53b";
+             :temIndex "44";
+             :temData "2020-03-16";
+             :temApelido "Avila" ;
+             :temPrimeiroNome "Terri" ;
+             :temNome "Terri Avila";
+             :temExame :e_60b3ee0ecfbe9bf6149ba53b .
+
+###  e_60b3ee0ecfbe9bf6149ba53b
+:e_60b3ee0ecfbe9bf6149ba53b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-16" .
+
+###  a_60b3ee0e84beb8fe0be593a5
+:a_60b3ee0e84beb8fe0be593a5 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e84beb8fe0be593a5";
+             :temIndex "45";
+             :temData "2019-10-14";
+             :temApelido "Small" ;
+             :temPrimeiroNome "Alford" ;
+             :temNome "Alford Small";
+             :temExame :e_60b3ee0e84beb8fe0be593a5 .
+
+###  e_60b3ee0e84beb8fe0be593a5
+:e_60b3ee0e84beb8fe0be593a5 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-14" .
+
+###  a_60b3ee0ebab436c1d23c2a84
+:a_60b3ee0ebab436c1d23c2a84 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ebab436c1d23c2a84";
+             :temIndex "46";
+             :temData "2020-03-01";
+             :temApelido "Arnold" ;
+             :temPrimeiroNome "Key" ;
+             :temNome "Key Arnold";
+             :temExame :e_60b3ee0ebab436c1d23c2a84 .
+
+###  e_60b3ee0ebab436c1d23c2a84
+:e_60b3ee0ebab436c1d23c2a84 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-01" .
+
+###  a_60b3ee0e20e993d5010857a4
+:a_60b3ee0e20e993d5010857a4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e20e993d5010857a4";
+             :temIndex "47";
+             :temData "2021-04-16";
+             :temApelido "Diaz" ;
+             :temPrimeiroNome "Nguyen" ;
+             :temNome "Nguyen Diaz";
+             :temExame :e_60b3ee0e20e993d5010857a4 .
+
+###  e_60b3ee0e20e993d5010857a4
+:e_60b3ee0e20e993d5010857a4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-16" .
+
+###  a_60b3ee0ee409ac878ba9b99b
+:a_60b3ee0ee409ac878ba9b99b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee409ac878ba9b99b";
+             :temIndex "48";
+             :temData "2021-04-04";
+             :temApelido "Morales" ;
+             :temPrimeiroNome "Sherry" ;
+             :temNome "Sherry Morales";
+             :temExame :e_60b3ee0ee409ac878ba9b99b .
+
+###  e_60b3ee0ee409ac878ba9b99b
+:e_60b3ee0ee409ac878ba9b99b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-04" .
+
+###  a_60b3ee0ed7a60ecd07dadb9e
+:a_60b3ee0ed7a60ecd07dadb9e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ed7a60ecd07dadb9e";
+             :temIndex "49";
+             :temData "2019-09-11";
+             :temApelido "Ballard" ;
+             :temPrimeiroNome "Crane" ;
+             :temNome "Crane Ballard";
+             :temExame :e_60b3ee0ed7a60ecd07dadb9e .
+
+###  e_60b3ee0ed7a60ecd07dadb9e
+:e_60b3ee0ed7a60ecd07dadb9e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-11" .
+
+###  a_60b3ee0e07cb41f968328e60
+:a_60b3ee0e07cb41f968328e60 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e07cb41f968328e60";
+             :temIndex "50";
+             :temData "2020-07-11";
+             :temApelido "Chaney" ;
+             :temPrimeiroNome "Terry" ;
+             :temNome "Terry Chaney";
+             :temExame :e_60b3ee0e07cb41f968328e60 .
+
+###  e_60b3ee0e07cb41f968328e60
+:e_60b3ee0e07cb41f968328e60 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-11" .
+
+###  a_60b3ee0ee48920a886a461e2
+:a_60b3ee0ee48920a886a461e2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee48920a886a461e2";
+             :temIndex "51";
+             :temData "2019-03-04";
+             :temApelido "Bryant" ;
+             :temPrimeiroNome "Sheppard" ;
+             :temNome "Sheppard Bryant";
+             :temExame :e_60b3ee0ee48920a886a461e2 .
+
+###  e_60b3ee0ee48920a886a461e2
+:e_60b3ee0ee48920a886a461e2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-04" .
+
+###  a_60b3ee0e79c5349b29557a62
+:a_60b3ee0e79c5349b29557a62 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e79c5349b29557a62";
+             :temIndex "52";
+             :temData "2020-11-03";
+             :temApelido "Mckinney" ;
+             :temPrimeiroNome "Janis" ;
+             :temNome "Janis Mckinney";
+             :temExame :e_60b3ee0e79c5349b29557a62 .
+
+###  e_60b3ee0e79c5349b29557a62
+:e_60b3ee0e79c5349b29557a62 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-03" .
+
+###  a_60b3ee0e3bffb9b3df6f5ea4
+:a_60b3ee0e3bffb9b3df6f5ea4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3bffb9b3df6f5ea4";
+             :temIndex "53";
+             :temData "2020-05-10";
+             :temApelido "Waters" ;
+             :temPrimeiroNome "Sue" ;
+             :temNome "Sue Waters";
+             :temExame :e_60b3ee0e3bffb9b3df6f5ea4 .
+
+###  e_60b3ee0e3bffb9b3df6f5ea4
+:e_60b3ee0e3bffb9b3df6f5ea4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-10" .
+
+###  a_60b3ee0e03c621784bf7b2eb
+:a_60b3ee0e03c621784bf7b2eb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e03c621784bf7b2eb";
+             :temIndex "54";
+             :temData "2019-05-30";
+             :temApelido "Page" ;
+             :temPrimeiroNome "Cynthia" ;
+             :temNome "Cynthia Page";
+             :temExame :e_60b3ee0e03c621784bf7b2eb .
+
+###  e_60b3ee0e03c621784bf7b2eb
+:e_60b3ee0e03c621784bf7b2eb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-30" .
+
+###  a_60b3ee0ea96d47b79642735d
+:a_60b3ee0ea96d47b79642735d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea96d47b79642735d";
+             :temIndex "55";
+             :temData "2019-10-14";
+             :temApelido "Rhodes" ;
+             :temPrimeiroNome "Montgomery" ;
+             :temNome "Montgomery Rhodes";
+             :temExame :e_60b3ee0ea96d47b79642735d .
+
+###  e_60b3ee0ea96d47b79642735d
+:e_60b3ee0ea96d47b79642735d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-14" .
+
+###  a_60b3ee0e63cc2530b136daef
+:a_60b3ee0e63cc2530b136daef rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e63cc2530b136daef";
+             :temIndex "56";
+             :temData "2021-03-22";
+             :temApelido "Joyce" ;
+             :temPrimeiroNome "Claire" ;
+             :temNome "Claire Joyce";
+             :temExame :e_60b3ee0e63cc2530b136daef .
+
+###  e_60b3ee0e63cc2530b136daef
+:e_60b3ee0e63cc2530b136daef rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-22" .
+
+###  a_60b3ee0e8a311b08fca3541b
+:a_60b3ee0e8a311b08fca3541b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e8a311b08fca3541b";
+             :temIndex "57";
+             :temData "2021-04-16";
+             :temApelido "Key" ;
+             :temPrimeiroNome "Evangelina" ;
+             :temNome "Evangelina Key";
+             :temExame :e_60b3ee0e8a311b08fca3541b .
+
+###  e_60b3ee0e8a311b08fca3541b
+:e_60b3ee0e8a311b08fca3541b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-16" .
+
+###  a_60b3ee0ea9b4c2114abcf6d7
+:a_60b3ee0ea9b4c2114abcf6d7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea9b4c2114abcf6d7";
+             :temIndex "58";
+             :temData "2020-11-24";
+             :temApelido "Gibson" ;
+             :temPrimeiroNome "Effie" ;
+             :temNome "Effie Gibson";
+             :temExame :e_60b3ee0ea9b4c2114abcf6d7 .
+
+###  e_60b3ee0ea9b4c2114abcf6d7
+:e_60b3ee0ea9b4c2114abcf6d7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-24" .
+
+###  a_60b3ee0e16fc834f28234ef4
+:a_60b3ee0e16fc834f28234ef4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e16fc834f28234ef4";
+             :temIndex "59";
+             :temData "2021-03-16";
+             :temApelido "Cobb" ;
+             :temPrimeiroNome "Maureen" ;
+             :temNome "Maureen Cobb";
+             :temExame :e_60b3ee0e16fc834f28234ef4 .
+
+###  e_60b3ee0e16fc834f28234ef4
+:e_60b3ee0e16fc834f28234ef4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-16" .
+
+###  a_60b3ee0efe55045feaaea0d0
+:a_60b3ee0efe55045feaaea0d0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0efe55045feaaea0d0";
+             :temIndex "60";
+             :temData "2020-11-22";
+             :temApelido "Holman" ;
+             :temPrimeiroNome "Dee" ;
+             :temNome "Dee Holman";
+             :temExame :e_60b3ee0efe55045feaaea0d0 .
+
+###  e_60b3ee0efe55045feaaea0d0
+:e_60b3ee0efe55045feaaea0d0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-22" .
+
+###  a_60b3ee0e53dad18808565be7
+:a_60b3ee0e53dad18808565be7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e53dad18808565be7";
+             :temIndex "61";
+             :temData "2019-02-13";
+             :temApelido "Morin" ;
+             :temPrimeiroNome "Larson" ;
+             :temNome "Larson Morin";
+             :temExame :e_60b3ee0e53dad18808565be7 .
+
+###  e_60b3ee0e53dad18808565be7
+:e_60b3ee0e53dad18808565be7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-13" .
+
+###  a_60b3ee0e25015995bacd5bed
+:a_60b3ee0e25015995bacd5bed rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e25015995bacd5bed";
+             :temIndex "62";
+             :temData "2021-01-29";
+             :temApelido "Martinez" ;
+             :temPrimeiroNome "Ursula" ;
+             :temNome "Ursula Martinez";
+             :temExame :e_60b3ee0e25015995bacd5bed .
+
+###  e_60b3ee0e25015995bacd5bed
+:e_60b3ee0e25015995bacd5bed rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-29" .
+
+###  a_60b3ee0ed8819374df399b72
+:a_60b3ee0ed8819374df399b72 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ed8819374df399b72";
+             :temIndex "63";
+             :temData "2020-10-10";
+             :temApelido "Clemons" ;
+             :temPrimeiroNome "English" ;
+             :temNome "English Clemons";
+             :temExame :e_60b3ee0ed8819374df399b72 .
+
+###  e_60b3ee0ed8819374df399b72
+:e_60b3ee0ed8819374df399b72 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-10" .
+
+###  a_60b3ee0e47a5478e9b66110d
+:a_60b3ee0e47a5478e9b66110d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e47a5478e9b66110d";
+             :temIndex "64";
+             :temData "2020-10-28";
+             :temApelido "Jackson" ;
+             :temPrimeiroNome "Stella" ;
+             :temNome "Stella Jackson";
+             :temExame :e_60b3ee0e47a5478e9b66110d .
+
+###  e_60b3ee0e47a5478e9b66110d
+:e_60b3ee0e47a5478e9b66110d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-28" .
+
+###  a_60b3ee0eddf26117e9d32bcb
+:a_60b3ee0eddf26117e9d32bcb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0eddf26117e9d32bcb";
+             :temIndex "65";
+             :temData "2019-05-01";
+             :temApelido "Joseph" ;
+             :temPrimeiroNome "Haley" ;
+             :temNome "Haley Joseph";
+             :temExame :e_60b3ee0eddf26117e9d32bcb .
+
+###  e_60b3ee0eddf26117e9d32bcb
+:e_60b3ee0eddf26117e9d32bcb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-01" .
+
+###  a_60b3ee0ebc5f8bcac6a4b89d
+:a_60b3ee0ebc5f8bcac6a4b89d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ebc5f8bcac6a4b89d";
+             :temIndex "66";
+             :temData "2020-04-09";
+             :temApelido "Roberts" ;
+             :temPrimeiroNome "Kelsey" ;
+             :temNome "Kelsey Roberts";
+             :temExame :e_60b3ee0ebc5f8bcac6a4b89d .
+
+###  e_60b3ee0ebc5f8bcac6a4b89d
+:e_60b3ee0ebc5f8bcac6a4b89d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-09" .
+
+###  a_60b3ee0e9f0c3dbf2ecc854f
+:a_60b3ee0e9f0c3dbf2ecc854f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e9f0c3dbf2ecc854f";
+             :temIndex "67";
+             :temData "2019-06-26";
+             :temApelido "Lynch" ;
+             :temPrimeiroNome "Watson" ;
+             :temNome "Watson Lynch";
+             :temExame :e_60b3ee0e9f0c3dbf2ecc854f .
+
+###  e_60b3ee0e9f0c3dbf2ecc854f
+:e_60b3ee0e9f0c3dbf2ecc854f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-26" .
+
+###  a_60b3ee0e6cb88f8d26691e15
+:a_60b3ee0e6cb88f8d26691e15 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e6cb88f8d26691e15";
+             :temIndex "68";
+             :temData "2021-05-14";
+             :temApelido "Coffey" ;
+             :temPrimeiroNome "Chasity" ;
+             :temNome "Chasity Coffey";
+             :temExame :e_60b3ee0e6cb88f8d26691e15 .
+
+###  e_60b3ee0e6cb88f8d26691e15
+:e_60b3ee0e6cb88f8d26691e15 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-14" .
+
+###  a_60b3ee0e0797a9f03b138d18
+:a_60b3ee0e0797a9f03b138d18 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e0797a9f03b138d18";
+             :temIndex "69";
+             :temData "2021-02-26";
+             :temApelido "Delaney" ;
+             :temPrimeiroNome "Paula" ;
+             :temNome "Paula Delaney";
+             :temExame :e_60b3ee0e0797a9f03b138d18 .
+
+###  e_60b3ee0e0797a9f03b138d18
+:e_60b3ee0e0797a9f03b138d18 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-26" .
+
+###  a_60b3ee0e769aecb50db619f2
+:a_60b3ee0e769aecb50db619f2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e769aecb50db619f2";
+             :temIndex "70";
+             :temData "2019-06-27";
+             :temApelido "Sanders" ;
+             :temPrimeiroNome "Galloway" ;
+             :temNome "Galloway Sanders";
+             :temExame :e_60b3ee0e769aecb50db619f2 .
+
+###  e_60b3ee0e769aecb50db619f2
+:e_60b3ee0e769aecb50db619f2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-27" .
+
+###  a_60b3ee0e553355b77862ea98
+:a_60b3ee0e553355b77862ea98 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e553355b77862ea98";
+             :temIndex "71";
+             :temData "2021-04-12";
+             :temApelido "Blankenship" ;
+             :temPrimeiroNome "Tina" ;
+             :temNome "Tina Blankenship";
+             :temExame :e_60b3ee0e553355b77862ea98 .
+
+###  e_60b3ee0e553355b77862ea98
+:e_60b3ee0e553355b77862ea98 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-12" .
+
+###  a_60b3ee0ee3bb3fd71f515d88
+:a_60b3ee0ee3bb3fd71f515d88 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ee3bb3fd71f515d88";
+             :temIndex "72";
+             :temData "2021-04-11";
+             :temApelido "Montgomery" ;
+             :temPrimeiroNome "Whitehead" ;
+             :temNome "Whitehead Montgomery";
+             :temExame :e_60b3ee0ee3bb3fd71f515d88 .
+
+###  e_60b3ee0ee3bb3fd71f515d88
+:e_60b3ee0ee3bb3fd71f515d88 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-11" .
+
+###  a_60b3ee0ed5dd8522cc53e7b0
+:a_60b3ee0ed5dd8522cc53e7b0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ed5dd8522cc53e7b0";
+             :temIndex "73";
+             :temData "2021-04-22";
+             :temApelido "Chambers" ;
+             :temPrimeiroNome "Dominguez" ;
+             :temNome "Dominguez Chambers";
+             :temExame :e_60b3ee0ed5dd8522cc53e7b0 .
+
+###  e_60b3ee0ed5dd8522cc53e7b0
+:e_60b3ee0ed5dd8522cc53e7b0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-22" .
+
+###  a_60b3ee0e28ab1329e2ed0888
+:a_60b3ee0e28ab1329e2ed0888 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e28ab1329e2ed0888";
+             :temIndex "74";
+             :temData "2019-05-23";
+             :temApelido "Eaton" ;
+             :temPrimeiroNome "Booth" ;
+             :temNome "Booth Eaton";
+             :temExame :e_60b3ee0e28ab1329e2ed0888 .
+
+###  e_60b3ee0e28ab1329e2ed0888
+:e_60b3ee0e28ab1329e2ed0888 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-23" .
+
+###  a_60b3ee0e7524108bf9936414
+:a_60b3ee0e7524108bf9936414 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e7524108bf9936414";
+             :temIndex "75";
+             :temData "2019-07-14";
+             :temApelido "Grant" ;
+             :temPrimeiroNome "Joanna" ;
+             :temNome "Joanna Grant";
+             :temExame :e_60b3ee0e7524108bf9936414 .
+
+###  e_60b3ee0e7524108bf9936414
+:e_60b3ee0e7524108bf9936414 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-14" .
+
+###  a_60b3ee0e59e86eaf9b9a5372
+:a_60b3ee0e59e86eaf9b9a5372 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e59e86eaf9b9a5372";
+             :temIndex "76";
+             :temData "2019-03-28";
+             :temApelido "Pearson" ;
+             :temPrimeiroNome "Jeri" ;
+             :temNome "Jeri Pearson";
+             :temExame :e_60b3ee0e59e86eaf9b9a5372 .
+
+###  e_60b3ee0e59e86eaf9b9a5372
+:e_60b3ee0e59e86eaf9b9a5372 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-28" .
+
+###  a_60b3ee0e13085dc64e17e4b0
+:a_60b3ee0e13085dc64e17e4b0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e13085dc64e17e4b0";
+             :temIndex "77";
+             :temData "2021-05-13";
+             :temApelido "Mcgee" ;
+             :temPrimeiroNome "Sanchez" ;
+             :temNome "Sanchez Mcgee";
+             :temExame :e_60b3ee0e13085dc64e17e4b0 .
+
+###  e_60b3ee0e13085dc64e17e4b0
+:e_60b3ee0e13085dc64e17e4b0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-13" .
+
+###  a_60b3ee0e3d4f8a3a439f8b7a
+:a_60b3ee0e3d4f8a3a439f8b7a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3d4f8a3a439f8b7a";
+             :temIndex "78";
+             :temData "2019-12-02";
+             :temApelido "Francis" ;
+             :temPrimeiroNome "Magdalena" ;
+             :temNome "Magdalena Francis";
+             :temExame :e_60b3ee0e3d4f8a3a439f8b7a .
+
+###  e_60b3ee0e3d4f8a3a439f8b7a
+:e_60b3ee0e3d4f8a3a439f8b7a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-02" .
+
+###  a_60b3ee0e6edaad4b8a63efae
+:a_60b3ee0e6edaad4b8a63efae rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e6edaad4b8a63efae";
+             :temIndex "79";
+             :temData "2021-05-19";
+             :temApelido "Poole" ;
+             :temPrimeiroNome "Morris" ;
+             :temNome "Morris Poole";
+             :temExame :e_60b3ee0e6edaad4b8a63efae .
+
+###  e_60b3ee0e6edaad4b8a63efae
+:e_60b3ee0e6edaad4b8a63efae rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-19" .
+
+###  a_60b3ee0e538d62e10eba66b6
+:a_60b3ee0e538d62e10eba66b6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e538d62e10eba66b6";
+             :temIndex "80";
+             :temData "2021-02-16";
+             :temApelido "Gonzalez" ;
+             :temPrimeiroNome "Rodriguez" ;
+             :temNome "Rodriguez Gonzalez";
+             :temExame :e_60b3ee0e538d62e10eba66b6 .
+
+###  e_60b3ee0e538d62e10eba66b6
+:e_60b3ee0e538d62e10eba66b6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-16" .
+
+###  a_60b3ee0eca6dd1525f201090
+:a_60b3ee0eca6dd1525f201090 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0eca6dd1525f201090";
+             :temIndex "81";
+             :temData "2021-05-18";
+             :temApelido "Rice" ;
+             :temPrimeiroNome "Christine" ;
+             :temNome "Christine Rice";
+             :temExame :e_60b3ee0eca6dd1525f201090 .
+
+###  e_60b3ee0eca6dd1525f201090
+:e_60b3ee0eca6dd1525f201090 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-18" .
+
+###  a_60b3ee0e472001f8e05a40ee
+:a_60b3ee0e472001f8e05a40ee rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e472001f8e05a40ee";
+             :temIndex "82";
+             :temData "2020-11-10";
+             :temApelido "Harper" ;
+             :temPrimeiroNome "Valdez" ;
+             :temNome "Valdez Harper";
+             :temExame :e_60b3ee0e472001f8e05a40ee .
+
+###  e_60b3ee0e472001f8e05a40ee
+:e_60b3ee0e472001f8e05a40ee rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-10" .
+
+###  a_60b3ee0e3b279f45e79cd6fa
+:a_60b3ee0e3b279f45e79cd6fa rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3b279f45e79cd6fa";
+             :temIndex "83";
+             :temData "2021-04-24";
+             :temApelido "Clay" ;
+             :temPrimeiroNome "Berta" ;
+             :temNome "Berta Clay";
+             :temExame :e_60b3ee0e3b279f45e79cd6fa .
+
+###  e_60b3ee0e3b279f45e79cd6fa
+:e_60b3ee0e3b279f45e79cd6fa rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-24" .
+
+###  a_60b3ee0eee4b8338800e6003
+:a_60b3ee0eee4b8338800e6003 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0eee4b8338800e6003";
+             :temIndex "84";
+             :temData "2019-10-18";
+             :temApelido "Sandoval" ;
+             :temPrimeiroNome "Bonnie" ;
+             :temNome "Bonnie Sandoval";
+             :temExame :e_60b3ee0eee4b8338800e6003 .
+
+###  e_60b3ee0eee4b8338800e6003
+:e_60b3ee0eee4b8338800e6003 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-18" .
+
+###  a_60b3ee0e66f3d4c3cc778b1e
+:a_60b3ee0e66f3d4c3cc778b1e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e66f3d4c3cc778b1e";
+             :temIndex "85";
+             :temData "2020-11-24";
+             :temApelido "Wiggins" ;
+             :temPrimeiroNome "Stein" ;
+             :temNome "Stein Wiggins";
+             :temExame :e_60b3ee0e66f3d4c3cc778b1e .
+
+###  e_60b3ee0e66f3d4c3cc778b1e
+:e_60b3ee0e66f3d4c3cc778b1e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-24" .
+
+###  a_60b3ee0e278b7161e71d9ceb
+:a_60b3ee0e278b7161e71d9ceb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e278b7161e71d9ceb";
+             :temIndex "86";
+             :temData "2020-12-08";
+             :temApelido "Mcclain" ;
+             :temPrimeiroNome "Tanya" ;
+             :temNome "Tanya Mcclain";
+             :temExame :e_60b3ee0e278b7161e71d9ceb .
+
+###  e_60b3ee0e278b7161e71d9ceb
+:e_60b3ee0e278b7161e71d9ceb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-08" .
+
+###  a_60b3ee0e7ded570068dce1d9
+:a_60b3ee0e7ded570068dce1d9 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e7ded570068dce1d9";
+             :temIndex "87";
+             :temData "2021-02-23";
+             :temApelido "Sanford" ;
+             :temPrimeiroNome "Perry" ;
+             :temNome "Perry Sanford";
+             :temExame :e_60b3ee0e7ded570068dce1d9 .
+
+###  e_60b3ee0e7ded570068dce1d9
+:e_60b3ee0e7ded570068dce1d9 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-23" .
+
+###  a_60b3ee0e94c479068389f5e3
+:a_60b3ee0e94c479068389f5e3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e94c479068389f5e3";
+             :temIndex "88";
+             :temData "2019-10-10";
+             :temApelido "Rutledge" ;
+             :temPrimeiroNome "Maxine" ;
+             :temNome "Maxine Rutledge";
+             :temExame :e_60b3ee0e94c479068389f5e3 .
+
+###  e_60b3ee0e94c479068389f5e3
+:e_60b3ee0e94c479068389f5e3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-10" .
+
+###  a_60b3ee0e7ac2f667ececc242
+:a_60b3ee0e7ac2f667ececc242 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e7ac2f667ececc242";
+             :temIndex "89";
+             :temData "2020-07-01";
+             :temApelido "Morse" ;
+             :temPrimeiroNome "Tucker" ;
+             :temNome "Tucker Morse";
+             :temExame :e_60b3ee0e7ac2f667ececc242 .
+
+###  e_60b3ee0e7ac2f667ececc242
+:e_60b3ee0e7ac2f667ececc242 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-01" .
+
+###  a_60b3ee0eabfeddd7f84fd275
+:a_60b3ee0eabfeddd7f84fd275 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0eabfeddd7f84fd275";
+             :temIndex "90";
+             :temData "2020-05-17";
+             :temApelido "Schmidt" ;
+             :temPrimeiroNome "Thelma" ;
+             :temNome "Thelma Schmidt";
+             :temExame :e_60b3ee0eabfeddd7f84fd275 .
+
+###  e_60b3ee0eabfeddd7f84fd275
+:e_60b3ee0eabfeddd7f84fd275 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-17" .
+
+###  a_60b3ee0e3d51473e1b41004b
+:a_60b3ee0e3d51473e1b41004b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e3d51473e1b41004b";
+             :temIndex "91";
+             :temData "2020-03-24";
+             :temApelido "Kim" ;
+             :temPrimeiroNome "Charles" ;
+             :temNome "Charles Kim";
+             :temExame :e_60b3ee0e3d51473e1b41004b .
+
+###  e_60b3ee0e3d51473e1b41004b
+:e_60b3ee0e3d51473e1b41004b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-24" .
+
+###  a_60b3ee0e926c1d538dfaabd3
+:a_60b3ee0e926c1d538dfaabd3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e926c1d538dfaabd3";
+             :temIndex "92";
+             :temData "2020-01-27";
+             :temApelido "Davidson" ;
+             :temPrimeiroNome "Duncan" ;
+             :temNome "Duncan Davidson";
+             :temExame :e_60b3ee0e926c1d538dfaabd3 .
+
+###  e_60b3ee0e926c1d538dfaabd3
+:e_60b3ee0e926c1d538dfaabd3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-27" .
+
+###  a_60b3ee0ea6339abf19460649
+:a_60b3ee0ea6339abf19460649 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea6339abf19460649";
+             :temIndex "93";
+             :temData "2019-04-07";
+             :temApelido "Dillon" ;
+             :temPrimeiroNome "Gertrude" ;
+             :temNome "Gertrude Dillon";
+             :temExame :e_60b3ee0ea6339abf19460649 .
+
+###  e_60b3ee0ea6339abf19460649
+:e_60b3ee0ea6339abf19460649 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-07" .
+
+###  a_60b3ee0e059b32a47b518e93
+:a_60b3ee0e059b32a47b518e93 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e059b32a47b518e93";
+             :temIndex "94";
+             :temData "2019-02-06";
+             :temApelido "Santana" ;
+             :temPrimeiroNome "Brennan" ;
+             :temNome "Brennan Santana";
+             :temExame :e_60b3ee0e059b32a47b518e93 .
+
+###  e_60b3ee0e059b32a47b518e93
+:e_60b3ee0e059b32a47b518e93 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-06" .
+
+###  a_60b3ee0e57b3659681466acf
+:a_60b3ee0e57b3659681466acf rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e57b3659681466acf";
+             :temIndex "95";
+             :temData "2020-11-09";
+             :temApelido "Barlow" ;
+             :temPrimeiroNome "Ball" ;
+             :temNome "Ball Barlow";
+             :temExame :e_60b3ee0e57b3659681466acf .
+
+###  e_60b3ee0e57b3659681466acf
+:e_60b3ee0e57b3659681466acf rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-09" .
+
+###  a_60b3ee0e651ec286b869976d
+:a_60b3ee0e651ec286b869976d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e651ec286b869976d";
+             :temIndex "96";
+             :temData "2020-05-10";
+             :temApelido "Baxter" ;
+             :temPrimeiroNome "Oneil" ;
+             :temNome "Oneil Baxter";
+             :temExame :e_60b3ee0e651ec286b869976d .
+
+###  e_60b3ee0e651ec286b869976d
+:e_60b3ee0e651ec286b869976d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-10" .
+
+###  a_60b3ee0e67043c92ce84a97c
+:a_60b3ee0e67043c92ce84a97c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e67043c92ce84a97c";
+             :temIndex "97";
+             :temData "2020-10-09";
+             :temApelido "Mayo" ;
+             :temPrimeiroNome "Helena" ;
+             :temNome "Helena Mayo";
+             :temExame :e_60b3ee0e67043c92ce84a97c .
+
+###  e_60b3ee0e67043c92ce84a97c
+:e_60b3ee0e67043c92ce84a97c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-09" .
+
+###  a_60b3ee0ea5d75fed720e4820
+:a_60b3ee0ea5d75fed720e4820 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0ea5d75fed720e4820";
+             :temIndex "98";
+             :temData "2021-05-10";
+             :temApelido "Brewer" ;
+             :temPrimeiroNome "Martin" ;
+             :temNome "Martin Brewer";
+             :temExame :e_60b3ee0ea5d75fed720e4820 .
+
+###  e_60b3ee0ea5d75fed720e4820
+:e_60b3ee0ea5d75fed720e4820 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-10" .
+
+###  a_60b3ee0e9dc10b681d5212b5
+:a_60b3ee0e9dc10b681d5212b5 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee0e9dc10b681d5212b5";
+             :temIndex "99";
+             :temData "2019-10-13";
+             :temApelido "Greene" ;
+             :temPrimeiroNome "Wilder" ;
+             :temNome "Wilder Greene";
+             :temExame :e_60b3ee0e9dc10b681d5212b5 .
+
+###  e_60b3ee0e9dc10b681d5212b5
+:e_60b3ee0e9dc10b681d5212b5 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-13" .
+
+###  a_60b3ee817af5fb3fb1e153ef
+:a_60b3ee817af5fb3fb1e153ef rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee817af5fb3fb1e153ef";
+             :temIndex "0";
+             :temData "2019-06-23";
+             :temApelido "Finch" ;
+             :temPrimeiroNome "Harrison" ;
+             :temNome "Harrison Finch";
+             :temExame :e_60b3ee817af5fb3fb1e153ef .
+
+###  e_60b3ee817af5fb3fb1e153ef
+:e_60b3ee817af5fb3fb1e153ef rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-23" .
+
+###  a_60b3ee81145de55fffb7bdfa
+:a_60b3ee81145de55fffb7bdfa rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81145de55fffb7bdfa";
+             :temIndex "1";
+             :temData "2019-01-01";
+             :temApelido "Alvarez" ;
+             :temPrimeiroNome "Jordan" ;
+             :temNome "Jordan Alvarez";
+             :temExame :e_60b3ee81145de55fffb7bdfa .
+
+###  e_60b3ee81145de55fffb7bdfa
+:e_60b3ee81145de55fffb7bdfa rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-01" .
+
+###  a_60b3ee811a4429c17e036357
+:a_60b3ee811a4429c17e036357 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee811a4429c17e036357";
+             :temIndex "2";
+             :temData "2020-04-27";
+             :temApelido "Norton" ;
+             :temPrimeiroNome "Lane" ;
+             :temNome "Lane Norton";
+             :temExame :e_60b3ee811a4429c17e036357 .
+
+###  e_60b3ee811a4429c17e036357
+:e_60b3ee811a4429c17e036357 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-27" .
+
+###  a_60b3ee8115745fe4ce8dbc5a
+:a_60b3ee8115745fe4ce8dbc5a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8115745fe4ce8dbc5a";
+             :temIndex "3";
+             :temData "2020-07-06";
+             :temApelido "Munoz" ;
+             :temPrimeiroNome "Carrillo" ;
+             :temNome "Carrillo Munoz";
+             :temExame :e_60b3ee8115745fe4ce8dbc5a .
+
+###  e_60b3ee8115745fe4ce8dbc5a
+:e_60b3ee8115745fe4ce8dbc5a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-06" .
+
+###  a_60b3ee8128adc82a45f8023d
+:a_60b3ee8128adc82a45f8023d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8128adc82a45f8023d";
+             :temIndex "4";
+             :temData "2020-06-18";
+             :temApelido "Frederick" ;
+             :temPrimeiroNome "Barrett" ;
+             :temNome "Barrett Frederick";
+             :temExame :e_60b3ee8128adc82a45f8023d .
+
+###  e_60b3ee8128adc82a45f8023d
+:e_60b3ee8128adc82a45f8023d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-18" .
+
+###  a_60b3ee81525963fc4fd2cf9d
+:a_60b3ee81525963fc4fd2cf9d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81525963fc4fd2cf9d";
+             :temIndex "5";
+             :temData "2019-06-12";
+             :temApelido "Stone" ;
+             :temPrimeiroNome "Harmon" ;
+             :temNome "Harmon Stone";
+             :temExame :e_60b3ee81525963fc4fd2cf9d .
+
+###  e_60b3ee81525963fc4fd2cf9d
+:e_60b3ee81525963fc4fd2cf9d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-12" .
+
+###  a_60b3ee81e69c16cc6108e7ad
+:a_60b3ee81e69c16cc6108e7ad rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e69c16cc6108e7ad";
+             :temIndex "6";
+             :temData "2021-01-18";
+             :temApelido "Potts" ;
+             :temPrimeiroNome "Chandra" ;
+             :temNome "Chandra Potts";
+             :temExame :e_60b3ee81e69c16cc6108e7ad .
+
+###  e_60b3ee81e69c16cc6108e7ad
+:e_60b3ee81e69c16cc6108e7ad rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-18" .
+
+###  a_60b3ee81ec958ef30a9daa8d
+:a_60b3ee81ec958ef30a9daa8d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81ec958ef30a9daa8d";
+             :temIndex "7";
+             :temData "2021-01-12";
+             :temApelido "Warner" ;
+             :temPrimeiroNome "John" ;
+             :temNome "John Warner";
+             :temExame :e_60b3ee81ec958ef30a9daa8d .
+
+###  e_60b3ee81ec958ef30a9daa8d
+:e_60b3ee81ec958ef30a9daa8d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-12" .
+
+###  a_60b3ee813905ebb273d5d9a0
+:a_60b3ee813905ebb273d5d9a0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee813905ebb273d5d9a0";
+             :temIndex "8";
+             :temData "2019-03-09";
+             :temApelido "Bowman" ;
+             :temPrimeiroNome "Casey" ;
+             :temNome "Casey Bowman";
+             :temExame :e_60b3ee813905ebb273d5d9a0 .
+
+###  e_60b3ee813905ebb273d5d9a0
+:e_60b3ee813905ebb273d5d9a0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-09" .
+
+###  a_60b3ee8106e9b44af3270a40
+:a_60b3ee8106e9b44af3270a40 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8106e9b44af3270a40";
+             :temIndex "9";
+             :temData "2020-04-23";
+             :temApelido "Pena" ;
+             :temPrimeiroNome "Mccullough" ;
+             :temNome "Mccullough Pena";
+             :temExame :e_60b3ee8106e9b44af3270a40 .
+
+###  e_60b3ee8106e9b44af3270a40
+:e_60b3ee8106e9b44af3270a40 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-23" .
+
+###  a_60b3ee812f35f4ff3c2edecf
+:a_60b3ee812f35f4ff3c2edecf rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee812f35f4ff3c2edecf";
+             :temIndex "10";
+             :temData "2019-06-27";
+             :temApelido "Bentley" ;
+             :temPrimeiroNome "Brianna" ;
+             :temNome "Brianna Bentley";
+             :temExame :e_60b3ee812f35f4ff3c2edecf .
+
+###  e_60b3ee812f35f4ff3c2edecf
+:e_60b3ee812f35f4ff3c2edecf rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-27" .
+
+###  a_60b3ee819d5bb33e21ff7e16
+:a_60b3ee819d5bb33e21ff7e16 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee819d5bb33e21ff7e16";
+             :temIndex "11";
+             :temData "2021-02-26";
+             :temApelido "Hendrix" ;
+             :temPrimeiroNome "Nixon" ;
+             :temNome "Nixon Hendrix";
+             :temExame :e_60b3ee819d5bb33e21ff7e16 .
+
+###  e_60b3ee819d5bb33e21ff7e16
+:e_60b3ee819d5bb33e21ff7e16 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-26" .
+
+###  a_60b3ee81ce306eb25d963bb0
+:a_60b3ee81ce306eb25d963bb0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81ce306eb25d963bb0";
+             :temIndex "12";
+             :temData "2019-07-11";
+             :temApelido "Luna" ;
+             :temPrimeiroNome "Buckner" ;
+             :temNome "Buckner Luna";
+             :temExame :e_60b3ee81ce306eb25d963bb0 .
+
+###  e_60b3ee81ce306eb25d963bb0
+:e_60b3ee81ce306eb25d963bb0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-11" .
+
+###  a_60b3ee8138f5b0173e1bc637
+:a_60b3ee8138f5b0173e1bc637 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8138f5b0173e1bc637";
+             :temIndex "13";
+             :temData "2019-08-25";
+             :temApelido "Zamora" ;
+             :temPrimeiroNome "Britt" ;
+             :temNome "Britt Zamora";
+             :temExame :e_60b3ee8138f5b0173e1bc637 .
+
+###  e_60b3ee8138f5b0173e1bc637
+:e_60b3ee8138f5b0173e1bc637 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-25" .
+
+###  a_60b3ee81f5035e13f1db0069
+:a_60b3ee81f5035e13f1db0069 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81f5035e13f1db0069";
+             :temIndex "14";
+             :temData "2020-11-14";
+             :temApelido "Bauer" ;
+             :temPrimeiroNome "Hendrix" ;
+             :temNome "Hendrix Bauer";
+             :temExame :e_60b3ee81f5035e13f1db0069 .
+
+###  e_60b3ee81f5035e13f1db0069
+:e_60b3ee81f5035e13f1db0069 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-14" .
+
+###  a_60b3ee8131597dae8f73a11b
+:a_60b3ee8131597dae8f73a11b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8131597dae8f73a11b";
+             :temIndex "15";
+             :temData "2019-10-30";
+             :temApelido "Sampson" ;
+             :temPrimeiroNome "Travis" ;
+             :temNome "Travis Sampson";
+             :temExame :e_60b3ee8131597dae8f73a11b .
+
+###  e_60b3ee8131597dae8f73a11b
+:e_60b3ee8131597dae8f73a11b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-30" .
+
+###  a_60b3ee81e32abefb2a9e8629
+:a_60b3ee81e32abefb2a9e8629 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e32abefb2a9e8629";
+             :temIndex "16";
+             :temData "2019-11-22";
+             :temApelido "Ware" ;
+             :temPrimeiroNome "Darla" ;
+             :temNome "Darla Ware";
+             :temExame :e_60b3ee81e32abefb2a9e8629 .
+
+###  e_60b3ee81e32abefb2a9e8629
+:e_60b3ee81e32abefb2a9e8629 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-11-22" .
+
+###  a_60b3ee815852d8fc2dc33e8a
+:a_60b3ee815852d8fc2dc33e8a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee815852d8fc2dc33e8a";
+             :temIndex "17";
+             :temData "2020-01-17";
+             :temApelido "Vaughn" ;
+             :temPrimeiroNome "Peters" ;
+             :temNome "Peters Vaughn";
+             :temExame :e_60b3ee815852d8fc2dc33e8a .
+
+###  e_60b3ee815852d8fc2dc33e8a
+:e_60b3ee815852d8fc2dc33e8a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-17" .
+
+###  a_60b3ee815e7f792d741f2228
+:a_60b3ee815e7f792d741f2228 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee815e7f792d741f2228";
+             :temIndex "18";
+             :temData "2020-10-25";
+             :temApelido "Herman" ;
+             :temPrimeiroNome "Lawrence" ;
+             :temNome "Lawrence Herman";
+             :temExame :e_60b3ee815e7f792d741f2228 .
+
+###  e_60b3ee815e7f792d741f2228
+:e_60b3ee815e7f792d741f2228 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-25" .
+
+###  a_60b3ee815b7d9a126c47165d
+:a_60b3ee815b7d9a126c47165d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee815b7d9a126c47165d";
+             :temIndex "19";
+             :temData "2019-07-26";
+             :temApelido "Oneill" ;
+             :temPrimeiroNome "Chang" ;
+             :temNome "Chang Oneill";
+             :temExame :e_60b3ee815b7d9a126c47165d .
+
+###  e_60b3ee815b7d9a126c47165d
+:e_60b3ee815b7d9a126c47165d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-26" .
+
+###  a_60b3ee81e769b6603a6525c6
+:a_60b3ee81e769b6603a6525c6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e769b6603a6525c6";
+             :temIndex "20";
+             :temData "2020-12-20";
+             :temApelido "Mcintyre" ;
+             :temPrimeiroNome "Patrick" ;
+             :temNome "Patrick Mcintyre";
+             :temExame :e_60b3ee81e769b6603a6525c6 .
+
+###  e_60b3ee81e769b6603a6525c6
+:e_60b3ee81e769b6603a6525c6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-20" .
+
+###  a_60b3ee815cb65367e6de0b3c
+:a_60b3ee815cb65367e6de0b3c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee815cb65367e6de0b3c";
+             :temIndex "21";
+             :temData "2020-01-11";
+             :temApelido "Evans" ;
+             :temPrimeiroNome "Joyce" ;
+             :temNome "Joyce Evans";
+             :temExame :e_60b3ee815cb65367e6de0b3c .
+
+###  e_60b3ee815cb65367e6de0b3c
+:e_60b3ee815cb65367e6de0b3c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-11" .
+
+###  a_60b3ee813bd664873721a6a1
+:a_60b3ee813bd664873721a6a1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee813bd664873721a6a1";
+             :temIndex "22";
+             :temData "2019-07-03";
+             :temApelido "Villarreal" ;
+             :temPrimeiroNome "Larsen" ;
+             :temNome "Larsen Villarreal";
+             :temExame :e_60b3ee813bd664873721a6a1 .
+
+###  e_60b3ee813bd664873721a6a1
+:e_60b3ee813bd664873721a6a1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-03" .
+
+###  a_60b3ee81e901a8c787b38008
+:a_60b3ee81e901a8c787b38008 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e901a8c787b38008";
+             :temIndex "23";
+             :temData "2020-03-09";
+             :temApelido "Yang" ;
+             :temPrimeiroNome "Morrow" ;
+             :temNome "Morrow Yang";
+             :temExame :e_60b3ee81e901a8c787b38008 .
+
+###  e_60b3ee81e901a8c787b38008
+:e_60b3ee81e901a8c787b38008 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-09" .
+
+###  a_60b3ee81874f8871966eedd1
+:a_60b3ee81874f8871966eedd1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81874f8871966eedd1";
+             :temIndex "24";
+             :temData "2021-02-04";
+             :temApelido "Horn" ;
+             :temPrimeiroNome "Dunn" ;
+             :temNome "Dunn Horn";
+             :temExame :e_60b3ee81874f8871966eedd1 .
+
+###  e_60b3ee81874f8871966eedd1
+:e_60b3ee81874f8871966eedd1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-04" .
+
+###  a_60b3ee81146b3cd8954b7256
+:a_60b3ee81146b3cd8954b7256 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81146b3cd8954b7256";
+             :temIndex "25";
+             :temData "2019-09-04";
+             :temApelido "Medina" ;
+             :temPrimeiroNome "Viola" ;
+             :temNome "Viola Medina";
+             :temExame :e_60b3ee81146b3cd8954b7256 .
+
+###  e_60b3ee81146b3cd8954b7256
+:e_60b3ee81146b3cd8954b7256 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-04" .
+
+###  a_60b3ee81e02e5fb35760bec3
+:a_60b3ee81e02e5fb35760bec3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e02e5fb35760bec3";
+             :temIndex "26";
+             :temData "2021-05-14";
+             :temApelido "Barnes" ;
+             :temPrimeiroNome "Valdez" ;
+             :temNome "Valdez Barnes";
+             :temExame :e_60b3ee81e02e5fb35760bec3 .
+
+###  e_60b3ee81e02e5fb35760bec3
+:e_60b3ee81e02e5fb35760bec3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-14" .
+
+###  a_60b3ee8162c5de4569ccfe2f
+:a_60b3ee8162c5de4569ccfe2f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8162c5de4569ccfe2f";
+             :temIndex "27";
+             :temData "2019-08-29";
+             :temApelido "Gibbs" ;
+             :temPrimeiroNome "Sweet" ;
+             :temNome "Sweet Gibbs";
+             :temExame :e_60b3ee8162c5de4569ccfe2f .
+
+###  e_60b3ee8162c5de4569ccfe2f
+:e_60b3ee8162c5de4569ccfe2f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-29" .
+
+###  a_60b3ee81034e5cb2050e882a
+:a_60b3ee81034e5cb2050e882a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81034e5cb2050e882a";
+             :temIndex "28";
+             :temData "2019-07-17";
+             :temApelido "Hayes" ;
+             :temPrimeiroNome "Addie" ;
+             :temNome "Addie Hayes";
+             :temExame :e_60b3ee81034e5cb2050e882a .
+
+###  e_60b3ee81034e5cb2050e882a
+:e_60b3ee81034e5cb2050e882a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-17" .
+
+###  a_60b3ee81a545dd3ccaea41b0
+:a_60b3ee81a545dd3ccaea41b0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81a545dd3ccaea41b0";
+             :temIndex "29";
+             :temData "2021-04-25";
+             :temApelido "Holt" ;
+             :temPrimeiroNome "May" ;
+             :temNome "May Holt";
+             :temExame :e_60b3ee81a545dd3ccaea41b0 .
+
+###  e_60b3ee81a545dd3ccaea41b0
+:e_60b3ee81a545dd3ccaea41b0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-25" .
+
+###  a_60b3ee817c1ce5b6cb67302a
+:a_60b3ee817c1ce5b6cb67302a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee817c1ce5b6cb67302a";
+             :temIndex "30";
+             :temData "2019-12-31";
+             :temApelido "Boyd" ;
+             :temPrimeiroNome "Christensen" ;
+             :temNome "Christensen Boyd";
+             :temExame :e_60b3ee817c1ce5b6cb67302a .
+
+###  e_60b3ee817c1ce5b6cb67302a
+:e_60b3ee817c1ce5b6cb67302a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-31" .
+
+###  a_60b3ee81cdbf91a4db1113eb
+:a_60b3ee81cdbf91a4db1113eb rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81cdbf91a4db1113eb";
+             :temIndex "31";
+             :temData "2019-03-18";
+             :temApelido "Franks" ;
+             :temPrimeiroNome "Workman" ;
+             :temNome "Workman Franks";
+             :temExame :e_60b3ee81cdbf91a4db1113eb .
+
+###  e_60b3ee81cdbf91a4db1113eb
+:e_60b3ee81cdbf91a4db1113eb rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-18" .
+
+###  a_60b3ee81ed581129ff3b2087
+:a_60b3ee81ed581129ff3b2087 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81ed581129ff3b2087";
+             :temIndex "32";
+             :temData "2020-01-05";
+             :temApelido "Underwood" ;
+             :temPrimeiroNome "Lucile" ;
+             :temNome "Lucile Underwood";
+             :temExame :e_60b3ee81ed581129ff3b2087 .
+
+###  e_60b3ee81ed581129ff3b2087
+:e_60b3ee81ed581129ff3b2087 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-05" .
+
+###  a_60b3ee81e62094c1d0bfca5c
+:a_60b3ee81e62094c1d0bfca5c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e62094c1d0bfca5c";
+             :temIndex "33";
+             :temData "2019-08-09";
+             :temApelido "Bishop" ;
+             :temPrimeiroNome "Heath" ;
+             :temNome "Heath Bishop";
+             :temExame :e_60b3ee81e62094c1d0bfca5c .
+
+###  e_60b3ee81e62094c1d0bfca5c
+:e_60b3ee81e62094c1d0bfca5c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-09" .
+
+###  a_60b3ee81bc1a4f4c3bc26de1
+:a_60b3ee81bc1a4f4c3bc26de1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81bc1a4f4c3bc26de1";
+             :temIndex "34";
+             :temData "2019-04-12";
+             :temApelido "Mejia" ;
+             :temPrimeiroNome "Rosales" ;
+             :temNome "Rosales Mejia";
+             :temExame :e_60b3ee81bc1a4f4c3bc26de1 .
+
+###  e_60b3ee81bc1a4f4c3bc26de1
+:e_60b3ee81bc1a4f4c3bc26de1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-12" .
+
+###  a_60b3ee81e20d4412bdf4f468
+:a_60b3ee81e20d4412bdf4f468 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e20d4412bdf4f468";
+             :temIndex "35";
+             :temData "2019-02-02";
+             :temApelido "Howe" ;
+             :temPrimeiroNome "Ray" ;
+             :temNome "Ray Howe";
+             :temExame :e_60b3ee81e20d4412bdf4f468 .
+
+###  e_60b3ee81e20d4412bdf4f468
+:e_60b3ee81e20d4412bdf4f468 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-02" .
+
+###  a_60b3ee81956a3fcc57d06c8c
+:a_60b3ee81956a3fcc57d06c8c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81956a3fcc57d06c8c";
+             :temIndex "36";
+             :temData "2019-07-05";
+             :temApelido "Campbell" ;
+             :temPrimeiroNome "Suarez" ;
+             :temNome "Suarez Campbell";
+             :temExame :e_60b3ee81956a3fcc57d06c8c .
+
+###  e_60b3ee81956a3fcc57d06c8c
+:e_60b3ee81956a3fcc57d06c8c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-05" .
+
+###  a_60b3ee8125e3c7f8ae2daa67
+:a_60b3ee8125e3c7f8ae2daa67 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8125e3c7f8ae2daa67";
+             :temIndex "37";
+             :temData "2020-01-20";
+             :temApelido "Le" ;
+             :temPrimeiroNome "Shaffer" ;
+             :temNome "Shaffer Le";
+             :temExame :e_60b3ee8125e3c7f8ae2daa67 .
+
+###  e_60b3ee8125e3c7f8ae2daa67
+:e_60b3ee8125e3c7f8ae2daa67 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-20" .
+
+###  a_60b3ee81c0d4102a9f396149
+:a_60b3ee81c0d4102a9f396149 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81c0d4102a9f396149";
+             :temIndex "38";
+             :temData "2019-02-08";
+             :temApelido "Wise" ;
+             :temPrimeiroNome "Justine" ;
+             :temNome "Justine Wise";
+             :temExame :e_60b3ee81c0d4102a9f396149 .
+
+###  e_60b3ee81c0d4102a9f396149
+:e_60b3ee81c0d4102a9f396149 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-08" .
+
+###  a_60b3ee81b5064ca4e9536d3c
+:a_60b3ee81b5064ca4e9536d3c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81b5064ca4e9536d3c";
+             :temIndex "39";
+             :temData "2019-10-14";
+             :temApelido "Tucker" ;
+             :temPrimeiroNome "Villarreal" ;
+             :temNome "Villarreal Tucker";
+             :temExame :e_60b3ee81b5064ca4e9536d3c .
+
+###  e_60b3ee81b5064ca4e9536d3c
+:e_60b3ee81b5064ca4e9536d3c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-14" .
+
+###  a_60b3ee8195bd88f9e936aca7
+:a_60b3ee8195bd88f9e936aca7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8195bd88f9e936aca7";
+             :temIndex "40";
+             :temData "2021-04-05";
+             :temApelido "Neal" ;
+             :temPrimeiroNome "Monica" ;
+             :temNome "Monica Neal";
+             :temExame :e_60b3ee8195bd88f9e936aca7 .
+
+###  e_60b3ee8195bd88f9e936aca7
+:e_60b3ee8195bd88f9e936aca7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-05" .
+
+###  a_60b3ee81864959e7fb8bc864
+:a_60b3ee81864959e7fb8bc864 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81864959e7fb8bc864";
+             :temIndex "41";
+             :temData "2019-05-11";
+             :temApelido "Dotson" ;
+             :temPrimeiroNome "Lloyd" ;
+             :temNome "Lloyd Dotson";
+             :temExame :e_60b3ee81864959e7fb8bc864 .
+
+###  e_60b3ee81864959e7fb8bc864
+:e_60b3ee81864959e7fb8bc864 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-11" .
+
+###  a_60b3ee8187b3e7d863bbaf97
+:a_60b3ee8187b3e7d863bbaf97 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8187b3e7d863bbaf97";
+             :temIndex "42";
+             :temData "2019-01-29";
+             :temApelido "Barker" ;
+             :temPrimeiroNome "Mccray" ;
+             :temNome "Mccray Barker";
+             :temExame :e_60b3ee8187b3e7d863bbaf97 .
+
+###  e_60b3ee8187b3e7d863bbaf97
+:e_60b3ee8187b3e7d863bbaf97 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-29" .
+
+###  a_60b3ee81afbc52a666850b8c
+:a_60b3ee81afbc52a666850b8c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81afbc52a666850b8c";
+             :temIndex "43";
+             :temData "2019-02-14";
+             :temApelido "Hunter" ;
+             :temPrimeiroNome "Sellers" ;
+             :temNome "Sellers Hunter";
+             :temExame :e_60b3ee81afbc52a666850b8c .
+
+###  e_60b3ee81afbc52a666850b8c
+:e_60b3ee81afbc52a666850b8c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-14" .
+
+###  a_60b3ee81d74bfab7c22b5eaa
+:a_60b3ee81d74bfab7c22b5eaa rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81d74bfab7c22b5eaa";
+             :temIndex "44";
+             :temData "2021-01-31";
+             :temApelido "Fletcher" ;
+             :temPrimeiroNome "Cathryn" ;
+             :temNome "Cathryn Fletcher";
+             :temExame :e_60b3ee81d74bfab7c22b5eaa .
+
+###  e_60b3ee81d74bfab7c22b5eaa
+:e_60b3ee81d74bfab7c22b5eaa rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-31" .
+
+###  a_60b3ee810078ab3f7321a731
+:a_60b3ee810078ab3f7321a731 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee810078ab3f7321a731";
+             :temIndex "45";
+             :temData "2020-02-29";
+             :temApelido "Lowery" ;
+             :temPrimeiroNome "Dee" ;
+             :temNome "Dee Lowery";
+             :temExame :e_60b3ee810078ab3f7321a731 .
+
+###  e_60b3ee810078ab3f7321a731
+:e_60b3ee810078ab3f7321a731 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-29" .
+
+###  a_60b3ee81a40cc7fc63be65ad
+:a_60b3ee81a40cc7fc63be65ad rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81a40cc7fc63be65ad";
+             :temIndex "46";
+             :temData "2019-04-25";
+             :temApelido "Wyatt" ;
+             :temPrimeiroNome "Freeman" ;
+             :temNome "Freeman Wyatt";
+             :temExame :e_60b3ee81a40cc7fc63be65ad .
+
+###  e_60b3ee81a40cc7fc63be65ad
+:e_60b3ee81a40cc7fc63be65ad rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-25" .
+
+###  a_60b3ee81efda597f9d074638
+:a_60b3ee81efda597f9d074638 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81efda597f9d074638";
+             :temIndex "47";
+             :temData "2020-01-09";
+             :temApelido "Drake" ;
+             :temPrimeiroNome "Guy" ;
+             :temNome "Guy Drake";
+             :temExame :e_60b3ee81efda597f9d074638 .
+
+###  e_60b3ee81efda597f9d074638
+:e_60b3ee81efda597f9d074638 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-09" .
+
+###  a_60b3ee81d9e0e05421b4d08e
+:a_60b3ee81d9e0e05421b4d08e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81d9e0e05421b4d08e";
+             :temIndex "48";
+             :temData "2019-07-01";
+             :temApelido "Good" ;
+             :temPrimeiroNome "Mendez" ;
+             :temNome "Mendez Good";
+             :temExame :e_60b3ee81d9e0e05421b4d08e .
+
+###  e_60b3ee81d9e0e05421b4d08e
+:e_60b3ee81d9e0e05421b4d08e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-01" .
+
+###  a_60b3ee813611a9e67c3546a3
+:a_60b3ee813611a9e67c3546a3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee813611a9e67c3546a3";
+             :temIndex "49";
+             :temData "2019-03-03";
+             :temApelido "Hogan" ;
+             :temPrimeiroNome "Burnett" ;
+             :temNome "Burnett Hogan";
+             :temExame :e_60b3ee813611a9e67c3546a3 .
+
+###  e_60b3ee813611a9e67c3546a3
+:e_60b3ee813611a9e67c3546a3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-03" .
+
+###  a_60b3ee816e416ff33c21634a
+:a_60b3ee816e416ff33c21634a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee816e416ff33c21634a";
+             :temIndex "50";
+             :temData "2020-08-03";
+             :temApelido "Cherry" ;
+             :temPrimeiroNome "Jamie" ;
+             :temNome "Jamie Cherry";
+             :temExame :e_60b3ee816e416ff33c21634a .
+
+###  e_60b3ee816e416ff33c21634a
+:e_60b3ee816e416ff33c21634a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-03" .
+
+###  a_60b3ee81858e8c650b8d992f
+:a_60b3ee81858e8c650b8d992f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81858e8c650b8d992f";
+             :temIndex "51";
+             :temData "2019-09-06";
+             :temApelido "Noble" ;
+             :temPrimeiroNome "Bird" ;
+             :temNome "Bird Noble";
+             :temExame :e_60b3ee81858e8c650b8d992f .
+
+###  e_60b3ee81858e8c650b8d992f
+:e_60b3ee81858e8c650b8d992f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-06" .
+
+###  a_60b3ee817468bb467a39e2f8
+:a_60b3ee817468bb467a39e2f8 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee817468bb467a39e2f8";
+             :temIndex "52";
+             :temData "2020-08-11";
+             :temApelido "Bradshaw" ;
+             :temPrimeiroNome "Burgess" ;
+             :temNome "Burgess Bradshaw";
+             :temExame :e_60b3ee817468bb467a39e2f8 .
+
+###  e_60b3ee817468bb467a39e2f8
+:e_60b3ee817468bb467a39e2f8 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-11" .
+
+###  a_60b3ee8117de88dc519ae9d3
+:a_60b3ee8117de88dc519ae9d3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8117de88dc519ae9d3";
+             :temIndex "53";
+             :temData "2020-10-22";
+             :temApelido "Jacobson" ;
+             :temPrimeiroNome "Laura" ;
+             :temNome "Laura Jacobson";
+             :temExame :e_60b3ee8117de88dc519ae9d3 .
+
+###  e_60b3ee8117de88dc519ae9d3
+:e_60b3ee8117de88dc519ae9d3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-22" .
+
+###  a_60b3ee8160bf5c46dcb3cfa7
+:a_60b3ee8160bf5c46dcb3cfa7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8160bf5c46dcb3cfa7";
+             :temIndex "54";
+             :temData "2020-09-06";
+             :temApelido "Sherman" ;
+             :temPrimeiroNome "Blair" ;
+             :temNome "Blair Sherman";
+             :temExame :e_60b3ee8160bf5c46dcb3cfa7 .
+
+###  e_60b3ee8160bf5c46dcb3cfa7
+:e_60b3ee8160bf5c46dcb3cfa7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-06" .
+
+###  a_60b3ee81ea2bed08bf81e861
+:a_60b3ee81ea2bed08bf81e861 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81ea2bed08bf81e861";
+             :temIndex "55";
+             :temData "2020-09-01";
+             :temApelido "Hawkins" ;
+             :temPrimeiroNome "Bobbi" ;
+             :temNome "Bobbi Hawkins";
+             :temExame :e_60b3ee81ea2bed08bf81e861 .
+
+###  e_60b3ee81ea2bed08bf81e861
+:e_60b3ee81ea2bed08bf81e861 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-01" .
+
+###  a_60b3ee81051fe3467036095a
+:a_60b3ee81051fe3467036095a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81051fe3467036095a";
+             :temIndex "56";
+             :temData "2019-12-21";
+             :temApelido "Anthony" ;
+             :temPrimeiroNome "Montoya" ;
+             :temNome "Montoya Anthony";
+             :temExame :e_60b3ee81051fe3467036095a .
+
+###  e_60b3ee81051fe3467036095a
+:e_60b3ee81051fe3467036095a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-21" .
+
+###  a_60b3ee8152ddb1911c44b96a
+:a_60b3ee8152ddb1911c44b96a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8152ddb1911c44b96a";
+             :temIndex "57";
+             :temData "2021-01-29";
+             :temApelido "Kirby" ;
+             :temPrimeiroNome "Hooper" ;
+             :temNome "Hooper Kirby";
+             :temExame :e_60b3ee8152ddb1911c44b96a .
+
+###  e_60b3ee8152ddb1911c44b96a
+:e_60b3ee8152ddb1911c44b96a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-29" .
+
+###  a_60b3ee81839f04840d199de9
+:a_60b3ee81839f04840d199de9 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81839f04840d199de9";
+             :temIndex "58";
+             :temData "2020-12-30";
+             :temApelido "Baird" ;
+             :temPrimeiroNome "Wolfe" ;
+             :temNome "Wolfe Baird";
+             :temExame :e_60b3ee81839f04840d199de9 .
+
+###  e_60b3ee81839f04840d199de9
+:e_60b3ee81839f04840d199de9 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-30" .
+
+###  a_60b3ee81375cc4e9aba8bc6e
+:a_60b3ee81375cc4e9aba8bc6e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81375cc4e9aba8bc6e";
+             :temIndex "59";
+             :temData "2019-01-03";
+             :temApelido "Graham" ;
+             :temPrimeiroNome "Lamb" ;
+             :temNome "Lamb Graham";
+             :temExame :e_60b3ee81375cc4e9aba8bc6e .
+
+###  e_60b3ee81375cc4e9aba8bc6e
+:e_60b3ee81375cc4e9aba8bc6e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-03" .
+
+###  a_60b3ee81422fd173977583e5
+:a_60b3ee81422fd173977583e5 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81422fd173977583e5";
+             :temIndex "60";
+             :temData "2021-04-22";
+             :temApelido "Fitzgerald" ;
+             :temPrimeiroNome "Valentine" ;
+             :temNome "Valentine Fitzgerald";
+             :temExame :e_60b3ee81422fd173977583e5 .
+
+###  e_60b3ee81422fd173977583e5
+:e_60b3ee81422fd173977583e5 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-22" .
+
+###  a_60b3ee813c7547937e764cab
+:a_60b3ee813c7547937e764cab rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee813c7547937e764cab";
+             :temIndex "61";
+             :temData "2020-06-26";
+             :temApelido "Mooney" ;
+             :temPrimeiroNome "Herminia" ;
+             :temNome "Herminia Mooney";
+             :temExame :e_60b3ee813c7547937e764cab .
+
+###  e_60b3ee813c7547937e764cab
+:e_60b3ee813c7547937e764cab rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-26" .
+
+###  a_60b3ee818db2661d700d6ea3
+:a_60b3ee818db2661d700d6ea3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee818db2661d700d6ea3";
+             :temIndex "62";
+             :temData "2019-09-08";
+             :temApelido "Hopkins" ;
+             :temPrimeiroNome "Golden" ;
+             :temNome "Golden Hopkins";
+             :temExame :e_60b3ee818db2661d700d6ea3 .
+
+###  e_60b3ee818db2661d700d6ea3
+:e_60b3ee818db2661d700d6ea3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-08" .
+
+###  a_60b3ee811426bce48b453191
+:a_60b3ee811426bce48b453191 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee811426bce48b453191";
+             :temIndex "63";
+             :temData "2020-12-22";
+             :temApelido "Andrews" ;
+             :temPrimeiroNome "Lancaster" ;
+             :temNome "Lancaster Andrews";
+             :temExame :e_60b3ee811426bce48b453191 .
+
+###  e_60b3ee811426bce48b453191
+:e_60b3ee811426bce48b453191 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-22" .
+
+###  a_60b3ee81d13fde44c2e74aab
+:a_60b3ee81d13fde44c2e74aab rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81d13fde44c2e74aab";
+             :temIndex "64";
+             :temData "2019-08-15";
+             :temApelido "Sullivan" ;
+             :temPrimeiroNome "Elena" ;
+             :temNome "Elena Sullivan";
+             :temExame :e_60b3ee81d13fde44c2e74aab .
+
+###  e_60b3ee81d13fde44c2e74aab
+:e_60b3ee81d13fde44c2e74aab rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-15" .
+
+###  a_60b3ee81ef9b6d894223a9fd
+:a_60b3ee81ef9b6d894223a9fd rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81ef9b6d894223a9fd";
+             :temIndex "65";
+             :temData "2020-04-26";
+             :temApelido "Ramsey" ;
+             :temPrimeiroNome "Deana" ;
+             :temNome "Deana Ramsey";
+             :temExame :e_60b3ee81ef9b6d894223a9fd .
+
+###  e_60b3ee81ef9b6d894223a9fd
+:e_60b3ee81ef9b6d894223a9fd rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-26" .
+
+###  a_60b3ee8154161dd7358b2e65
+:a_60b3ee8154161dd7358b2e65 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8154161dd7358b2e65";
+             :temIndex "66";
+             :temData "2019-12-01";
+             :temApelido "Rose" ;
+             :temPrimeiroNome "Mayra" ;
+             :temNome "Mayra Rose";
+             :temExame :e_60b3ee8154161dd7358b2e65 .
+
+###  e_60b3ee8154161dd7358b2e65
+:e_60b3ee8154161dd7358b2e65 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-01" .
+
+###  a_60b3ee81fcb5c8f9970e2899
+:a_60b3ee81fcb5c8f9970e2899 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81fcb5c8f9970e2899";
+             :temIndex "67";
+             :temData "2020-07-27";
+             :temApelido "Salinas" ;
+             :temPrimeiroNome "Tina" ;
+             :temNome "Tina Salinas";
+             :temExame :e_60b3ee81fcb5c8f9970e2899 .
+
+###  e_60b3ee81fcb5c8f9970e2899
+:e_60b3ee81fcb5c8f9970e2899 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-27" .
+
+###  a_60b3ee81e97e332884e1299a
+:a_60b3ee81e97e332884e1299a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e97e332884e1299a";
+             :temIndex "68";
+             :temData "2020-05-24";
+             :temApelido "Caldwell" ;
+             :temPrimeiroNome "Sheila" ;
+             :temNome "Sheila Caldwell";
+             :temExame :e_60b3ee81e97e332884e1299a .
+
+###  e_60b3ee81e97e332884e1299a
+:e_60b3ee81e97e332884e1299a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-24" .
+
+###  a_60b3ee8151ebf5ddaa5ca13c
+:a_60b3ee8151ebf5ddaa5ca13c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8151ebf5ddaa5ca13c";
+             :temIndex "69";
+             :temData "2020-01-02";
+             :temApelido "Duffy" ;
+             :temPrimeiroNome "Hudson" ;
+             :temNome "Hudson Duffy";
+             :temExame :e_60b3ee8151ebf5ddaa5ca13c .
+
+###  e_60b3ee8151ebf5ddaa5ca13c
+:e_60b3ee8151ebf5ddaa5ca13c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-02" .
+
+###  a_60b3ee818e25f41f67491f02
+:a_60b3ee818e25f41f67491f02 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee818e25f41f67491f02";
+             :temIndex "70";
+             :temData "2021-04-22";
+             :temApelido "Douglas" ;
+             :temPrimeiroNome "Guzman" ;
+             :temNome "Guzman Douglas";
+             :temExame :e_60b3ee818e25f41f67491f02 .
+
+###  e_60b3ee818e25f41f67491f02
+:e_60b3ee818e25f41f67491f02 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-22" .
+
+###  a_60b3ee817ca74f6cb607c6f9
+:a_60b3ee817ca74f6cb607c6f9 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee817ca74f6cb607c6f9";
+             :temIndex "71";
+             :temData "2019-12-09";
+             :temApelido "Bartlett" ;
+             :temPrimeiroNome "Ethel" ;
+             :temNome "Ethel Bartlett";
+             :temExame :e_60b3ee817ca74f6cb607c6f9 .
+
+###  e_60b3ee817ca74f6cb607c6f9
+:e_60b3ee817ca74f6cb607c6f9 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-09" .
+
+###  a_60b3ee818cd611e6bf56f2f1
+:a_60b3ee818cd611e6bf56f2f1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee818cd611e6bf56f2f1";
+             :temIndex "72";
+             :temData "2021-04-13";
+             :temApelido "Odom" ;
+             :temPrimeiroNome "Doyle" ;
+             :temNome "Doyle Odom";
+             :temExame :e_60b3ee818cd611e6bf56f2f1 .
+
+###  e_60b3ee818cd611e6bf56f2f1
+:e_60b3ee818cd611e6bf56f2f1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-13" .
+
+###  a_60b3ee81c1515414ac1fb549
+:a_60b3ee81c1515414ac1fb549 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81c1515414ac1fb549";
+             :temIndex "73";
+             :temData "2020-06-02";
+             :temApelido "Castaneda" ;
+             :temPrimeiroNome "Araceli" ;
+             :temNome "Araceli Castaneda";
+             :temExame :e_60b3ee81c1515414ac1fb549 .
+
+###  e_60b3ee81c1515414ac1fb549
+:e_60b3ee81c1515414ac1fb549 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-02" .
+
+###  a_60b3ee81d15fe413bd86d938
+:a_60b3ee81d15fe413bd86d938 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81d15fe413bd86d938";
+             :temIndex "74";
+             :temData "2020-06-04";
+             :temApelido "Walker" ;
+             :temPrimeiroNome "Fuentes" ;
+             :temNome "Fuentes Walker";
+             :temExame :e_60b3ee81d15fe413bd86d938 .
+
+###  e_60b3ee81d15fe413bd86d938
+:e_60b3ee81d15fe413bd86d938 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-04" .
+
+###  a_60b3ee81e2dc932e4e6f7e51
+:a_60b3ee81e2dc932e4e6f7e51 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e2dc932e4e6f7e51";
+             :temIndex "75";
+             :temData "2019-01-09";
+             :temApelido "Moore" ;
+             :temPrimeiroNome "Sarah" ;
+             :temNome "Sarah Moore";
+             :temExame :e_60b3ee81e2dc932e4e6f7e51 .
+
+###  e_60b3ee81e2dc932e4e6f7e51
+:e_60b3ee81e2dc932e4e6f7e51 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-09" .
+
+###  a_60b3ee81f9666482a5c13406
+:a_60b3ee81f9666482a5c13406 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81f9666482a5c13406";
+             :temIndex "76";
+             :temData "2019-10-25";
+             :temApelido "Watson" ;
+             :temPrimeiroNome "Cheryl" ;
+             :temNome "Cheryl Watson";
+             :temExame :e_60b3ee81f9666482a5c13406 .
+
+###  e_60b3ee81f9666482a5c13406
+:e_60b3ee81f9666482a5c13406 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-25" .
+
+###  a_60b3ee81d7dbdba97369e927
+:a_60b3ee81d7dbdba97369e927 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81d7dbdba97369e927";
+             :temIndex "77";
+             :temData "2019-04-12";
+             :temApelido "Velez" ;
+             :temPrimeiroNome "Langley" ;
+             :temNome "Langley Velez";
+             :temExame :e_60b3ee81d7dbdba97369e927 .
+
+###  e_60b3ee81d7dbdba97369e927
+:e_60b3ee81d7dbdba97369e927 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-12" .
+
+###  a_60b3ee81e024b81dde892dd6
+:a_60b3ee81e024b81dde892dd6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81e024b81dde892dd6";
+             :temIndex "78";
+             :temData "2019-06-30";
+             :temApelido "Morrison" ;
+             :temPrimeiroNome "Alisa" ;
+             :temNome "Alisa Morrison";
+             :temExame :e_60b3ee81e024b81dde892dd6 .
+
+###  e_60b3ee81e024b81dde892dd6
+:e_60b3ee81e024b81dde892dd6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-30" .
+
+###  a_60b3ee81c5073acaa4febef6
+:a_60b3ee81c5073acaa4febef6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81c5073acaa4febef6";
+             :temIndex "79";
+             :temData "2019-12-29";
+             :temApelido "Merritt" ;
+             :temPrimeiroNome "Malinda" ;
+             :temNome "Malinda Merritt";
+             :temExame :e_60b3ee81c5073acaa4febef6 .
+
+###  e_60b3ee81c5073acaa4febef6
+:e_60b3ee81c5073acaa4febef6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-29" .
+
+###  a_60b3ee81963e6ecf70e3d586
+:a_60b3ee81963e6ecf70e3d586 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81963e6ecf70e3d586";
+             :temIndex "80";
+             :temData "2020-07-30";
+             :temApelido "Kane" ;
+             :temPrimeiroNome "Lenora" ;
+             :temNome "Lenora Kane";
+             :temExame :e_60b3ee81963e6ecf70e3d586 .
+
+###  e_60b3ee81963e6ecf70e3d586
+:e_60b3ee81963e6ecf70e3d586 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-30" .
+
+###  a_60b3ee8122f33125935e59d3
+:a_60b3ee8122f33125935e59d3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8122f33125935e59d3";
+             :temIndex "81";
+             :temData "2021-02-25";
+             :temApelido "Curtis" ;
+             :temPrimeiroNome "Cabrera" ;
+             :temNome "Cabrera Curtis";
+             :temExame :e_60b3ee8122f33125935e59d3 .
+
+###  e_60b3ee8122f33125935e59d3
+:e_60b3ee8122f33125935e59d3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-25" .
+
+###  a_60b3ee81828ee0dba6850475
+:a_60b3ee81828ee0dba6850475 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81828ee0dba6850475";
+             :temIndex "82";
+             :temData "2020-05-28";
+             :temApelido "Benjamin" ;
+             :temPrimeiroNome "Roseann" ;
+             :temNome "Roseann Benjamin";
+             :temExame :e_60b3ee81828ee0dba6850475 .
+
+###  e_60b3ee81828ee0dba6850475
+:e_60b3ee81828ee0dba6850475 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-28" .
+
+###  a_60b3ee8152b3f05331a47645
+:a_60b3ee8152b3f05331a47645 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8152b3f05331a47645";
+             :temIndex "83";
+             :temData "2020-04-29";
+             :temApelido "Ray" ;
+             :temPrimeiroNome "Stafford" ;
+             :temNome "Stafford Ray";
+             :temExame :e_60b3ee8152b3f05331a47645 .
+
+###  e_60b3ee8152b3f05331a47645
+:e_60b3ee8152b3f05331a47645 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-29" .
+
+###  a_60b3ee81411e7acd216d0bf0
+:a_60b3ee81411e7acd216d0bf0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81411e7acd216d0bf0";
+             :temIndex "84";
+             :temData "2019-09-18";
+             :temApelido "Trevino" ;
+             :temPrimeiroNome "Jewel" ;
+             :temNome "Jewel Trevino";
+             :temExame :e_60b3ee81411e7acd216d0bf0 .
+
+###  e_60b3ee81411e7acd216d0bf0
+:e_60b3ee81411e7acd216d0bf0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-18" .
+
+###  a_60b3ee8103ed6d19e90ce9f7
+:a_60b3ee8103ed6d19e90ce9f7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8103ed6d19e90ce9f7";
+             :temIndex "85";
+             :temData "2020-09-04";
+             :temApelido "Woods" ;
+             :temPrimeiroNome "Mckenzie" ;
+             :temNome "Mckenzie Woods";
+             :temExame :e_60b3ee8103ed6d19e90ce9f7 .
+
+###  e_60b3ee8103ed6d19e90ce9f7
+:e_60b3ee8103ed6d19e90ce9f7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-04" .
+
+###  a_60b3ee8182b8712a2f15e41a
+:a_60b3ee8182b8712a2f15e41a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8182b8712a2f15e41a";
+             :temIndex "86";
+             :temData "2020-12-10";
+             :temApelido "Conley" ;
+             :temPrimeiroNome "Jean" ;
+             :temNome "Jean Conley";
+             :temExame :e_60b3ee8182b8712a2f15e41a .
+
+###  e_60b3ee8182b8712a2f15e41a
+:e_60b3ee8182b8712a2f15e41a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-10" .
+
+###  a_60b3ee811a2021b6b24ffbc2
+:a_60b3ee811a2021b6b24ffbc2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee811a2021b6b24ffbc2";
+             :temIndex "87";
+             :temData "2020-09-14";
+             :temApelido "Alexander" ;
+             :temPrimeiroNome "Conway" ;
+             :temNome "Conway Alexander";
+             :temExame :e_60b3ee811a2021b6b24ffbc2 .
+
+###  e_60b3ee811a2021b6b24ffbc2
+:e_60b3ee811a2021b6b24ffbc2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-14" .
+
+###  a_60b3ee81c44446a9eceefd87
+:a_60b3ee81c44446a9eceefd87 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81c44446a9eceefd87";
+             :temIndex "88";
+             :temData "2020-04-08";
+             :temApelido "Joyce" ;
+             :temPrimeiroNome "Maryann" ;
+             :temNome "Maryann Joyce";
+             :temExame :e_60b3ee81c44446a9eceefd87 .
+
+###  e_60b3ee81c44446a9eceefd87
+:e_60b3ee81c44446a9eceefd87 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-08" .
+
+###  a_60b3ee812d50aad901e7e243
+:a_60b3ee812d50aad901e7e243 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee812d50aad901e7e243";
+             :temIndex "89";
+             :temData "2019-07-31";
+             :temApelido "Carroll" ;
+             :temPrimeiroNome "Ayers" ;
+             :temNome "Ayers Carroll";
+             :temExame :e_60b3ee812d50aad901e7e243 .
+
+###  e_60b3ee812d50aad901e7e243
+:e_60b3ee812d50aad901e7e243 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-31" .
+
+###  a_60b3ee816b42d22ea075aba7
+:a_60b3ee816b42d22ea075aba7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee816b42d22ea075aba7";
+             :temIndex "90";
+             :temData "2019-01-29";
+             :temApelido "Mccormick" ;
+             :temPrimeiroNome "Bonita" ;
+             :temNome "Bonita Mccormick";
+             :temExame :e_60b3ee816b42d22ea075aba7 .
+
+###  e_60b3ee816b42d22ea075aba7
+:e_60b3ee816b42d22ea075aba7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-29" .
+
+###  a_60b3ee812a4b8125a96689a0
+:a_60b3ee812a4b8125a96689a0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee812a4b8125a96689a0";
+             :temIndex "91";
+             :temData "2019-04-28";
+             :temApelido "Kramer" ;
+             :temPrimeiroNome "Kathy" ;
+             :temNome "Kathy Kramer";
+             :temExame :e_60b3ee812a4b8125a96689a0 .
+
+###  e_60b3ee812a4b8125a96689a0
+:e_60b3ee812a4b8125a96689a0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-28" .
+
+###  a_60b3ee81b71a63346d0243e7
+:a_60b3ee81b71a63346d0243e7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81b71a63346d0243e7";
+             :temIndex "92";
+             :temData "2020-10-10";
+             :temApelido "Bryan" ;
+             :temPrimeiroNome "Tonia" ;
+             :temNome "Tonia Bryan";
+             :temExame :e_60b3ee81b71a63346d0243e7 .
+
+###  e_60b3ee81b71a63346d0243e7
+:e_60b3ee81b71a63346d0243e7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-10" .
+
+###  a_60b3ee81559385200672594d
+:a_60b3ee81559385200672594d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81559385200672594d";
+             :temIndex "93";
+             :temData "2020-02-02";
+             :temApelido "Mercer" ;
+             :temPrimeiroNome "Barker" ;
+             :temNome "Barker Mercer";
+             :temExame :e_60b3ee81559385200672594d .
+
+###  e_60b3ee81559385200672594d
+:e_60b3ee81559385200672594d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-02" .
+
+###  a_60b3ee81a113b4cb68ef5906
+:a_60b3ee81a113b4cb68ef5906 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81a113b4cb68ef5906";
+             :temIndex "94";
+             :temData "2019-05-19";
+             :temApelido "Tyson" ;
+             :temPrimeiroNome "Mcfarland" ;
+             :temNome "Mcfarland Tyson";
+             :temExame :e_60b3ee81a113b4cb68ef5906 .
+
+###  e_60b3ee81a113b4cb68ef5906
+:e_60b3ee81a113b4cb68ef5906 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-19" .
+
+###  a_60b3ee81655cc723f988a62d
+:a_60b3ee81655cc723f988a62d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81655cc723f988a62d";
+             :temIndex "95";
+             :temData "2021-02-19";
+             :temApelido "Carter" ;
+             :temPrimeiroNome "Meagan" ;
+             :temNome "Meagan Carter";
+             :temExame :e_60b3ee81655cc723f988a62d .
+
+###  e_60b3ee81655cc723f988a62d
+:e_60b3ee81655cc723f988a62d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-19" .
+
+###  a_60b3ee8186fff74d432c9259
+:a_60b3ee8186fff74d432c9259 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee8186fff74d432c9259";
+             :temIndex "96";
+             :temData "2019-06-25";
+             :temApelido "Webb" ;
+             :temPrimeiroNome "Catalina" ;
+             :temNome "Catalina Webb";
+             :temExame :e_60b3ee8186fff74d432c9259 .
+
+###  e_60b3ee8186fff74d432c9259
+:e_60b3ee8186fff74d432c9259 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-25" .
+
+###  a_60b3ee81051bf4a2138bb141
+:a_60b3ee81051bf4a2138bb141 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81051bf4a2138bb141";
+             :temIndex "97";
+             :temData "2020-10-31";
+             :temApelido "Sargent" ;
+             :temPrimeiroNome "Moses" ;
+             :temNome "Moses Sargent";
+             :temExame :e_60b3ee81051bf4a2138bb141 .
+
+###  e_60b3ee81051bf4a2138bb141
+:e_60b3ee81051bf4a2138bb141 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-31" .
+
+###  a_60b3ee81c4345661feac7a9a
+:a_60b3ee81c4345661feac7a9a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81c4345661feac7a9a";
+             :temIndex "98";
+             :temData "2021-02-19";
+             :temApelido "Mccall" ;
+             :temPrimeiroNome "Preston" ;
+             :temNome "Preston Mccall";
+             :temExame :e_60b3ee81c4345661feac7a9a .
+
+###  e_60b3ee81c4345661feac7a9a
+:e_60b3ee81c4345661feac7a9a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-19" .
+
+###  a_60b3ee81451b811209c3deef
+:a_60b3ee81451b811209c3deef rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3ee81451b811209c3deef";
+             :temIndex "99";
+             :temData "2019-06-30";
+             :temApelido "Clements" ;
+             :temPrimeiroNome "Christian" ;
+             :temNome "Christian Clements";
+             :temExame :e_60b3ee81451b811209c3deef .
+
+###  e_60b3ee81451b811209c3deef
+:e_60b3ee81451b811209c3deef rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-30" .
+
+###  a_60b3eeb933e50bd455af89a9
+:a_60b3eeb933e50bd455af89a9 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb933e50bd455af89a9";
+             :temIndex "0";
+             :temData "2020-08-30";
+             :temApelido "Hester" ;
+             :temPrimeiroNome "Jeanine" ;
+             :temNome "Jeanine Hester";
+             :temExame :e_60b3eeb933e50bd455af89a9 .
+
+###  e_60b3eeb933e50bd455af89a9
+:e_60b3eeb933e50bd455af89a9 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-30" .
+
+###  a_60b3eeb9b701a941937c0dd8
+:a_60b3eeb9b701a941937c0dd8 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9b701a941937c0dd8";
+             :temIndex "1";
+             :temData "2020-08-12";
+             :temApelido "Espinoza" ;
+             :temPrimeiroNome "Tonia" ;
+             :temNome "Tonia Espinoza";
+             :temExame :e_60b3eeb9b701a941937c0dd8 .
+
+###  e_60b3eeb9b701a941937c0dd8
+:e_60b3eeb9b701a941937c0dd8 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-12" .
+
+###  a_60b3eeb9fc87ff10010ae517
+:a_60b3eeb9fc87ff10010ae517 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9fc87ff10010ae517";
+             :temIndex "2";
+             :temData "2019-08-25";
+             :temApelido "Howard" ;
+             :temPrimeiroNome "Alyssa" ;
+             :temNome "Alyssa Howard";
+             :temExame :e_60b3eeb9fc87ff10010ae517 .
+
+###  e_60b3eeb9fc87ff10010ae517
+:e_60b3eeb9fc87ff10010ae517 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-25" .
+
+###  a_60b3eeb9e966a3cf1239840a
+:a_60b3eeb9e966a3cf1239840a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9e966a3cf1239840a";
+             :temIndex "3";
+             :temData "2020-06-29";
+             :temApelido "Fulton" ;
+             :temPrimeiroNome "Merrill" ;
+             :temNome "Merrill Fulton";
+             :temExame :e_60b3eeb9e966a3cf1239840a .
+
+###  e_60b3eeb9e966a3cf1239840a
+:e_60b3eeb9e966a3cf1239840a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-29" .
+
+###  a_60b3eeb9dbbc9f23e5c888ac
+:a_60b3eeb9dbbc9f23e5c888ac rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9dbbc9f23e5c888ac";
+             :temIndex "4";
+             :temData "2020-11-01";
+             :temApelido "Erickson" ;
+             :temPrimeiroNome "Jaime" ;
+             :temNome "Jaime Erickson";
+             :temExame :e_60b3eeb9dbbc9f23e5c888ac .
+
+###  e_60b3eeb9dbbc9f23e5c888ac
+:e_60b3eeb9dbbc9f23e5c888ac rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-01" .
+
+###  a_60b3eeb9425c872217db611e
+:a_60b3eeb9425c872217db611e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9425c872217db611e";
+             :temIndex "5";
+             :temData "2019-09-09";
+             :temApelido "Skinner" ;
+             :temPrimeiroNome "Felicia" ;
+             :temNome "Felicia Skinner";
+             :temExame :e_60b3eeb9425c872217db611e .
+
+###  e_60b3eeb9425c872217db611e
+:e_60b3eeb9425c872217db611e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-09" .
+
+###  a_60b3eeb967d2dd4be3e2c87d
+:a_60b3eeb967d2dd4be3e2c87d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb967d2dd4be3e2c87d";
+             :temIndex "6";
+             :temData "2020-07-12";
+             :temApelido "Bray" ;
+             :temPrimeiroNome "Margaret" ;
+             :temNome "Margaret Bray";
+             :temExame :e_60b3eeb967d2dd4be3e2c87d .
+
+###  e_60b3eeb967d2dd4be3e2c87d
+:e_60b3eeb967d2dd4be3e2c87d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-12" .
+
+###  a_60b3eeb944e8f43647ed05f2
+:a_60b3eeb944e8f43647ed05f2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb944e8f43647ed05f2";
+             :temIndex "7";
+             :temData "2021-03-04";
+             :temApelido "Cotton" ;
+             :temPrimeiroNome "Etta" ;
+             :temNome "Etta Cotton";
+             :temExame :e_60b3eeb944e8f43647ed05f2 .
+
+###  e_60b3eeb944e8f43647ed05f2
+:e_60b3eeb944e8f43647ed05f2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-04" .
+
+###  a_60b3eeb9bc3d74e0cb400631
+:a_60b3eeb9bc3d74e0cb400631 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9bc3d74e0cb400631";
+             :temIndex "8";
+             :temData "2020-10-18";
+             :temApelido "Davidson" ;
+             :temPrimeiroNome "Kelley" ;
+             :temNome "Kelley Davidson";
+             :temExame :e_60b3eeb9bc3d74e0cb400631 .
+
+###  e_60b3eeb9bc3d74e0cb400631
+:e_60b3eeb9bc3d74e0cb400631 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-18" .
+
+###  a_60b3eeb934a2174ec11d92a6
+:a_60b3eeb934a2174ec11d92a6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb934a2174ec11d92a6";
+             :temIndex "9";
+             :temData "2019-08-18";
+             :temApelido "Merritt" ;
+             :temPrimeiroNome "Crawford" ;
+             :temNome "Crawford Merritt";
+             :temExame :e_60b3eeb934a2174ec11d92a6 .
+
+###  e_60b3eeb934a2174ec11d92a6
+:e_60b3eeb934a2174ec11d92a6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-18" .
+
+###  a_60b3eeb9fa4e587712a640d4
+:a_60b3eeb9fa4e587712a640d4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9fa4e587712a640d4";
+             :temIndex "10";
+             :temData "2020-11-04";
+             :temApelido "Buck" ;
+             :temPrimeiroNome "Kim" ;
+             :temNome "Kim Buck";
+             :temExame :e_60b3eeb9fa4e587712a640d4 .
+
+###  e_60b3eeb9fa4e587712a640d4
+:e_60b3eeb9fa4e587712a640d4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-04" .
+
+###  a_60b3eeb948dd398953308f2d
+:a_60b3eeb948dd398953308f2d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb948dd398953308f2d";
+             :temIndex "11";
+             :temData "2019-07-01";
+             :temApelido "Schmidt" ;
+             :temPrimeiroNome "Gilda" ;
+             :temNome "Gilda Schmidt";
+             :temExame :e_60b3eeb948dd398953308f2d .
+
+###  e_60b3eeb948dd398953308f2d
+:e_60b3eeb948dd398953308f2d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-01" .
+
+###  a_60b3eeb9a2085e98659a2f5b
+:a_60b3eeb9a2085e98659a2f5b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a2085e98659a2f5b";
+             :temIndex "12";
+             :temData "2019-04-09";
+             :temApelido "Aguirre" ;
+             :temPrimeiroNome "Mcintosh" ;
+             :temNome "Mcintosh Aguirre";
+             :temExame :e_60b3eeb9a2085e98659a2f5b .
+
+###  e_60b3eeb9a2085e98659a2f5b
+:e_60b3eeb9a2085e98659a2f5b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-09" .
+
+###  a_60b3eeb9bfd86db079523f51
+:a_60b3eeb9bfd86db079523f51 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9bfd86db079523f51";
+             :temIndex "13";
+             :temData "2020-11-25";
+             :temApelido "Bradshaw" ;
+             :temPrimeiroNome "Ida" ;
+             :temNome "Ida Bradshaw";
+             :temExame :e_60b3eeb9bfd86db079523f51 .
+
+###  e_60b3eeb9bfd86db079523f51
+:e_60b3eeb9bfd86db079523f51 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-25" .
+
+###  a_60b3eeb98614ea36f88963ba
+:a_60b3eeb98614ea36f88963ba rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb98614ea36f88963ba";
+             :temIndex "14";
+             :temData "2020-04-08";
+             :temApelido "Pacheco" ;
+             :temPrimeiroNome "Jefferson" ;
+             :temNome "Jefferson Pacheco";
+             :temExame :e_60b3eeb98614ea36f88963ba .
+
+###  e_60b3eeb98614ea36f88963ba
+:e_60b3eeb98614ea36f88963ba rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-08" .
+
+###  a_60b3eeb910808af364c63729
+:a_60b3eeb910808af364c63729 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb910808af364c63729";
+             :temIndex "15";
+             :temData "2020-12-14";
+             :temApelido "Hickman" ;
+             :temPrimeiroNome "Olson" ;
+             :temNome "Olson Hickman";
+             :temExame :e_60b3eeb910808af364c63729 .
+
+###  e_60b3eeb910808af364c63729
+:e_60b3eeb910808af364c63729 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-14" .
+
+###  a_60b3eeb939a5cb2da478d86c
+:a_60b3eeb939a5cb2da478d86c rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb939a5cb2da478d86c";
+             :temIndex "16";
+             :temData "2020-06-09";
+             :temApelido "Mccall" ;
+             :temPrimeiroNome "Malinda" ;
+             :temNome "Malinda Mccall";
+             :temExame :e_60b3eeb939a5cb2da478d86c .
+
+###  e_60b3eeb939a5cb2da478d86c
+:e_60b3eeb939a5cb2da478d86c rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-09" .
+
+###  a_60b3eeb92b1debc068c42080
+:a_60b3eeb92b1debc068c42080 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb92b1debc068c42080";
+             :temIndex "17";
+             :temData "2020-10-06";
+             :temApelido "Dejesus" ;
+             :temPrimeiroNome "Raquel" ;
+             :temNome "Raquel Dejesus";
+             :temExame :e_60b3eeb92b1debc068c42080 .
+
+###  e_60b3eeb92b1debc068c42080
+:e_60b3eeb92b1debc068c42080 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-06" .
+
+###  a_60b3eeb9ec44aba1040d2e1e
+:a_60b3eeb9ec44aba1040d2e1e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9ec44aba1040d2e1e";
+             :temIndex "18";
+             :temData "2020-02-06";
+             :temApelido "Chambers" ;
+             :temPrimeiroNome "Daniel" ;
+             :temNome "Daniel Chambers";
+             :temExame :e_60b3eeb9ec44aba1040d2e1e .
+
+###  e_60b3eeb9ec44aba1040d2e1e
+:e_60b3eeb9ec44aba1040d2e1e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-06" .
+
+###  a_60b3eeb9a9f081f26deada43
+:a_60b3eeb9a9f081f26deada43 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a9f081f26deada43";
+             :temIndex "19";
+             :temData "2019-12-21";
+             :temApelido "Sharp" ;
+             :temPrimeiroNome "Samantha" ;
+             :temNome "Samantha Sharp";
+             :temExame :e_60b3eeb9a9f081f26deada43 .
+
+###  e_60b3eeb9a9f081f26deada43
+:e_60b3eeb9a9f081f26deada43 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-21" .
+
+###  a_60b3eeb9468961b15e8e1277
+:a_60b3eeb9468961b15e8e1277 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9468961b15e8e1277";
+             :temIndex "20";
+             :temData "2021-01-09";
+             :temApelido "Herman" ;
+             :temPrimeiroNome "Robert" ;
+             :temNome "Robert Herman";
+             :temExame :e_60b3eeb9468961b15e8e1277 .
+
+###  e_60b3eeb9468961b15e8e1277
+:e_60b3eeb9468961b15e8e1277 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-09" .
+
+###  a_60b3eeb9edcbd2a0befa0a74
+:a_60b3eeb9edcbd2a0befa0a74 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9edcbd2a0befa0a74";
+             :temIndex "21";
+             :temData "2021-02-20";
+             :temApelido "Chapman" ;
+             :temPrimeiroNome "Olive" ;
+             :temNome "Olive Chapman";
+             :temExame :e_60b3eeb9edcbd2a0befa0a74 .
+
+###  e_60b3eeb9edcbd2a0befa0a74
+:e_60b3eeb9edcbd2a0befa0a74 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-20" .
+
+###  a_60b3eeb97aecf09da8650e19
+:a_60b3eeb97aecf09da8650e19 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97aecf09da8650e19";
+             :temIndex "22";
+             :temData "2019-04-30";
+             :temApelido "Blackburn" ;
+             :temPrimeiroNome "Mccoy" ;
+             :temNome "Mccoy Blackburn";
+             :temExame :e_60b3eeb97aecf09da8650e19 .
+
+###  e_60b3eeb97aecf09da8650e19
+:e_60b3eeb97aecf09da8650e19 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-04-30" .
+
+###  a_60b3eeb9d7265f5ab15e4fed
+:a_60b3eeb9d7265f5ab15e4fed rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9d7265f5ab15e4fed";
+             :temIndex "23";
+             :temData "2020-12-10";
+             :temApelido "Ferrell" ;
+             :temPrimeiroNome "Lambert" ;
+             :temNome "Lambert Ferrell";
+             :temExame :e_60b3eeb9d7265f5ab15e4fed .
+
+###  e_60b3eeb9d7265f5ab15e4fed
+:e_60b3eeb9d7265f5ab15e4fed rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-10" .
+
+###  a_60b3eeb9217c0274b8a1022b
+:a_60b3eeb9217c0274b8a1022b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9217c0274b8a1022b";
+             :temIndex "24";
+             :temData "2019-03-12";
+             :temApelido "Coffey" ;
+             :temPrimeiroNome "Small" ;
+             :temNome "Small Coffey";
+             :temExame :e_60b3eeb9217c0274b8a1022b .
+
+###  e_60b3eeb9217c0274b8a1022b
+:e_60b3eeb9217c0274b8a1022b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-12" .
+
+###  a_60b3eeb9cc832d080dd2c0e0
+:a_60b3eeb9cc832d080dd2c0e0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9cc832d080dd2c0e0";
+             :temIndex "25";
+             :temData "2019-05-03";
+             :temApelido "Daniels" ;
+             :temPrimeiroNome "Hicks" ;
+             :temNome "Hicks Daniels";
+             :temExame :e_60b3eeb9cc832d080dd2c0e0 .
+
+###  e_60b3eeb9cc832d080dd2c0e0
+:e_60b3eeb9cc832d080dd2c0e0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-03" .
+
+###  a_60b3eeb9bc920eef418c62ac
+:a_60b3eeb9bc920eef418c62ac rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9bc920eef418c62ac";
+             :temIndex "26";
+             :temData "2019-03-23";
+             :temApelido "Cabrera" ;
+             :temPrimeiroNome "Meghan" ;
+             :temNome "Meghan Cabrera";
+             :temExame :e_60b3eeb9bc920eef418c62ac .
+
+###  e_60b3eeb9bc920eef418c62ac
+:e_60b3eeb9bc920eef418c62ac rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-23" .
+
+###  a_60b3eeb9cf9c078af09a7b74
+:a_60b3eeb9cf9c078af09a7b74 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9cf9c078af09a7b74";
+             :temIndex "27";
+             :temData "2019-01-12";
+             :temApelido "Hart" ;
+             :temPrimeiroNome "Hubbard" ;
+             :temNome "Hubbard Hart";
+             :temExame :e_60b3eeb9cf9c078af09a7b74 .
+
+###  e_60b3eeb9cf9c078af09a7b74
+:e_60b3eeb9cf9c078af09a7b74 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-12" .
+
+###  a_60b3eeb968346da5d651b20d
+:a_60b3eeb968346da5d651b20d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb968346da5d651b20d";
+             :temIndex "28";
+             :temData "2020-07-25";
+             :temApelido "Gallegos" ;
+             :temPrimeiroNome "Chelsea" ;
+             :temNome "Chelsea Gallegos";
+             :temExame :e_60b3eeb968346da5d651b20d .
+
+###  e_60b3eeb968346da5d651b20d
+:e_60b3eeb968346da5d651b20d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-25" .
+
+###  a_60b3eeb91afe89807606d176
+:a_60b3eeb91afe89807606d176 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91afe89807606d176";
+             :temIndex "29";
+             :temData "2020-03-16";
+             :temApelido "Figueroa" ;
+             :temPrimeiroNome "Natalie" ;
+             :temNome "Natalie Figueroa";
+             :temExame :e_60b3eeb91afe89807606d176 .
+
+###  e_60b3eeb91afe89807606d176
+:e_60b3eeb91afe89807606d176 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-16" .
+
+###  a_60b3eeb9080c70a07ef5c4ac
+:a_60b3eeb9080c70a07ef5c4ac rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9080c70a07ef5c4ac";
+             :temIndex "30";
+             :temData "2020-11-20";
+             :temApelido "Ward" ;
+             :temPrimeiroNome "Hayes" ;
+             :temNome "Hayes Ward";
+             :temExame :e_60b3eeb9080c70a07ef5c4ac .
+
+###  e_60b3eeb9080c70a07ef5c4ac
+:e_60b3eeb9080c70a07ef5c4ac rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-20" .
+
+###  a_60b3eeb96f9b421618f39954
+:a_60b3eeb96f9b421618f39954 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb96f9b421618f39954";
+             :temIndex "31";
+             :temData "2019-10-13";
+             :temApelido "Mccray" ;
+             :temPrimeiroNome "Graves" ;
+             :temNome "Graves Mccray";
+             :temExame :e_60b3eeb96f9b421618f39954 .
+
+###  e_60b3eeb96f9b421618f39954
+:e_60b3eeb96f9b421618f39954 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-13" .
+
+###  a_60b3eeb90afb40019dea8a64
+:a_60b3eeb90afb40019dea8a64 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb90afb40019dea8a64";
+             :temIndex "32";
+             :temData "2020-09-27";
+             :temApelido "Riley" ;
+             :temPrimeiroNome "Mavis" ;
+             :temNome "Mavis Riley";
+             :temExame :e_60b3eeb90afb40019dea8a64 .
+
+###  e_60b3eeb90afb40019dea8a64
+:e_60b3eeb90afb40019dea8a64 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-27" .
+
+###  a_60b3eeb90fc3f9678fed0903
+:a_60b3eeb90fc3f9678fed0903 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb90fc3f9678fed0903";
+             :temIndex "33";
+             :temData "2019-09-09";
+             :temApelido "Joseph" ;
+             :temPrimeiroNome "Salas" ;
+             :temNome "Salas Joseph";
+             :temExame :e_60b3eeb90fc3f9678fed0903 .
+
+###  e_60b3eeb90fc3f9678fed0903
+:e_60b3eeb90fc3f9678fed0903 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-09" .
+
+###  a_60b3eeb9f0342bd19d6a5a39
+:a_60b3eeb9f0342bd19d6a5a39 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9f0342bd19d6a5a39";
+             :temIndex "34";
+             :temData "2020-10-22";
+             :temApelido "Peck" ;
+             :temPrimeiroNome "Carly" ;
+             :temNome "Carly Peck";
+             :temExame :e_60b3eeb9f0342bd19d6a5a39 .
+
+###  e_60b3eeb9f0342bd19d6a5a39
+:e_60b3eeb9f0342bd19d6a5a39 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-22" .
+
+###  a_60b3eeb966fd425e94c59395
+:a_60b3eeb966fd425e94c59395 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb966fd425e94c59395";
+             :temIndex "35";
+             :temData "2019-02-16";
+             :temApelido "Blevins" ;
+             :temPrimeiroNome "Ramirez" ;
+             :temNome "Ramirez Blevins";
+             :temExame :e_60b3eeb966fd425e94c59395 .
+
+###  e_60b3eeb966fd425e94c59395
+:e_60b3eeb966fd425e94c59395 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-16" .
+
+###  a_60b3eeb91977642e615c41e3
+:a_60b3eeb91977642e615c41e3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91977642e615c41e3";
+             :temIndex "36";
+             :temData "2020-12-31";
+             :temApelido "Saunders" ;
+             :temPrimeiroNome "Parks" ;
+             :temNome "Parks Saunders";
+             :temExame :e_60b3eeb91977642e615c41e3 .
+
+###  e_60b3eeb91977642e615c41e3
+:e_60b3eeb91977642e615c41e3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-31" .
+
+###  a_60b3eeb93a24ff700a3928d5
+:a_60b3eeb93a24ff700a3928d5 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb93a24ff700a3928d5";
+             :temIndex "37";
+             :temData "2021-01-13";
+             :temApelido "Armstrong" ;
+             :temPrimeiroNome "Leanne" ;
+             :temNome "Leanne Armstrong";
+             :temExame :e_60b3eeb93a24ff700a3928d5 .
+
+###  e_60b3eeb93a24ff700a3928d5
+:e_60b3eeb93a24ff700a3928d5 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-13" .
+
+###  a_60b3eeb99c434fb1a7c7c633
+:a_60b3eeb99c434fb1a7c7c633 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb99c434fb1a7c7c633";
+             :temIndex "38";
+             :temData "2020-03-22";
+             :temApelido "Stark" ;
+             :temPrimeiroNome "Kline" ;
+             :temNome "Kline Stark";
+             :temExame :e_60b3eeb99c434fb1a7c7c633 .
+
+###  e_60b3eeb99c434fb1a7c7c633
+:e_60b3eeb99c434fb1a7c7c633 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-03-22" .
+
+###  a_60b3eeb9f430b0e9e81165c4
+:a_60b3eeb9f430b0e9e81165c4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9f430b0e9e81165c4";
+             :temIndex "39";
+             :temData "2019-02-18";
+             :temApelido "Guzman" ;
+             :temPrimeiroNome "Elliott" ;
+             :temNome "Elliott Guzman";
+             :temExame :e_60b3eeb9f430b0e9e81165c4 .
+
+###  e_60b3eeb9f430b0e9e81165c4
+:e_60b3eeb9f430b0e9e81165c4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-18" .
+
+###  a_60b3eeb94d27b52fe1b15f19
+:a_60b3eeb94d27b52fe1b15f19 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb94d27b52fe1b15f19";
+             :temIndex "40";
+             :temData "2019-08-06";
+             :temApelido "Baldwin" ;
+             :temPrimeiroNome "Liz" ;
+             :temNome "Liz Baldwin";
+             :temExame :e_60b3eeb94d27b52fe1b15f19 .
+
+###  e_60b3eeb94d27b52fe1b15f19
+:e_60b3eeb94d27b52fe1b15f19 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-06" .
+
+###  a_60b3eeb91ab516aa15e1199a
+:a_60b3eeb91ab516aa15e1199a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91ab516aa15e1199a";
+             :temIndex "41";
+             :temData "2020-10-16";
+             :temApelido "Bullock" ;
+             :temPrimeiroNome "Warner" ;
+             :temNome "Warner Bullock";
+             :temExame :e_60b3eeb91ab516aa15e1199a .
+
+###  e_60b3eeb91ab516aa15e1199a
+:e_60b3eeb91ab516aa15e1199a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-10-16" .
+
+###  a_60b3eeb97b17e786bdf88e29
+:a_60b3eeb97b17e786bdf88e29 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97b17e786bdf88e29";
+             :temIndex "42";
+             :temData "2019-12-18";
+             :temApelido "Harper" ;
+             :temPrimeiroNome "Santana" ;
+             :temNome "Santana Harper";
+             :temExame :e_60b3eeb97b17e786bdf88e29 .
+
+###  e_60b3eeb97b17e786bdf88e29
+:e_60b3eeb97b17e786bdf88e29 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-18" .
+
+###  a_60b3eeb95762eb38f4ae9a22
+:a_60b3eeb95762eb38f4ae9a22 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb95762eb38f4ae9a22";
+             :temIndex "43";
+             :temData "2019-01-18";
+             :temApelido "Odonnell" ;
+             :temPrimeiroNome "Imelda" ;
+             :temNome "Imelda Odonnell";
+             :temExame :e_60b3eeb95762eb38f4ae9a22 .
+
+###  e_60b3eeb95762eb38f4ae9a22
+:e_60b3eeb95762eb38f4ae9a22 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-01-18" .
+
+###  a_60b3eeb9c05f073a238c4aa6
+:a_60b3eeb9c05f073a238c4aa6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c05f073a238c4aa6";
+             :temIndex "44";
+             :temData "2020-09-24";
+             :temApelido "Curry" ;
+             :temPrimeiroNome "Lila" ;
+             :temNome "Lila Curry";
+             :temExame :e_60b3eeb9c05f073a238c4aa6 .
+
+###  e_60b3eeb9c05f073a238c4aa6
+:e_60b3eeb9c05f073a238c4aa6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-24" .
+
+###  a_60b3eeb9c82e74bc1831a3be
+:a_60b3eeb9c82e74bc1831a3be rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c82e74bc1831a3be";
+             :temIndex "45";
+             :temData "2020-02-06";
+             :temApelido "Ellis" ;
+             :temPrimeiroNome "Milagros" ;
+             :temNome "Milagros Ellis";
+             :temExame :e_60b3eeb9c82e74bc1831a3be .
+
+###  e_60b3eeb9c82e74bc1831a3be
+:e_60b3eeb9c82e74bc1831a3be rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-06" .
+
+###  a_60b3eeb9e81cdbbee14cab97
+:a_60b3eeb9e81cdbbee14cab97 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9e81cdbbee14cab97";
+             :temIndex "46";
+             :temData "2019-07-15";
+             :temApelido "Hale" ;
+             :temPrimeiroNome "Stafford" ;
+             :temNome "Stafford Hale";
+             :temExame :e_60b3eeb9e81cdbbee14cab97 .
+
+###  e_60b3eeb9e81cdbbee14cab97
+:e_60b3eeb9e81cdbbee14cab97 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-15" .
+
+###  a_60b3eeb983fb3181e8f43d12
+:a_60b3eeb983fb3181e8f43d12 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb983fb3181e8f43d12";
+             :temIndex "47";
+             :temData "2021-05-05";
+             :temApelido "Cline" ;
+             :temPrimeiroNome "Blevins" ;
+             :temNome "Blevins Cline";
+             :temExame :e_60b3eeb983fb3181e8f43d12 .
+
+###  e_60b3eeb983fb3181e8f43d12
+:e_60b3eeb983fb3181e8f43d12 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-05" .
+
+###  a_60b3eeb9817b6dc6e2848304
+:a_60b3eeb9817b6dc6e2848304 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9817b6dc6e2848304";
+             :temIndex "48";
+             :temData "2020-07-15";
+             :temApelido "Owen" ;
+             :temPrimeiroNome "Marisol" ;
+             :temNome "Marisol Owen";
+             :temExame :e_60b3eeb9817b6dc6e2848304 .
+
+###  e_60b3eeb9817b6dc6e2848304
+:e_60b3eeb9817b6dc6e2848304 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-15" .
+
+###  a_60b3eeb9ab56338f42cdaf13
+:a_60b3eeb9ab56338f42cdaf13 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9ab56338f42cdaf13";
+             :temIndex "49";
+             :temData "2020-07-02";
+             :temApelido "Walsh" ;
+             :temPrimeiroNome "Mcintyre" ;
+             :temNome "Mcintyre Walsh";
+             :temExame :e_60b3eeb9ab56338f42cdaf13 .
+
+###  e_60b3eeb9ab56338f42cdaf13
+:e_60b3eeb9ab56338f42cdaf13 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-02" .
+
+###  a_60b3eeb9de8d709dd3fd086f
+:a_60b3eeb9de8d709dd3fd086f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9de8d709dd3fd086f";
+             :temIndex "50";
+             :temData "2020-11-06";
+             :temApelido "Silva" ;
+             :temPrimeiroNome "Valarie" ;
+             :temNome "Valarie Silva";
+             :temExame :e_60b3eeb9de8d709dd3fd086f .
+
+###  e_60b3eeb9de8d709dd3fd086f
+:e_60b3eeb9de8d709dd3fd086f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-06" .
+
+###  a_60b3eeb9077997c0e212f286
+:a_60b3eeb9077997c0e212f286 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9077997c0e212f286";
+             :temIndex "51";
+             :temData "2020-01-06";
+             :temApelido "Beck" ;
+             :temPrimeiroNome "Jimmie" ;
+             :temNome "Jimmie Beck";
+             :temExame :e_60b3eeb9077997c0e212f286 .
+
+###  e_60b3eeb9077997c0e212f286
+:e_60b3eeb9077997c0e212f286 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-06" .
+
+###  a_60b3eeb916caa13610b8cadf
+:a_60b3eeb916caa13610b8cadf rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb916caa13610b8cadf";
+             :temIndex "52";
+             :temData "2019-08-30";
+             :temApelido "Price" ;
+             :temPrimeiroNome "Amparo" ;
+             :temNome "Amparo Price";
+             :temExame :e_60b3eeb916caa13610b8cadf .
+
+###  e_60b3eeb916caa13610b8cadf
+:e_60b3eeb916caa13610b8cadf rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-30" .
+
+###  a_60b3eeb9c65ee38149a83dfc
+:a_60b3eeb9c65ee38149a83dfc rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c65ee38149a83dfc";
+             :temIndex "53";
+             :temData "2021-01-24";
+             :temApelido "Lowery" ;
+             :temPrimeiroNome "Susanna" ;
+             :temNome "Susanna Lowery";
+             :temExame :e_60b3eeb9c65ee38149a83dfc .
+
+###  e_60b3eeb9c65ee38149a83dfc
+:e_60b3eeb9c65ee38149a83dfc rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-24" .
+
+###  a_60b3eeb97c9c1d91087c47a4
+:a_60b3eeb97c9c1d91087c47a4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97c9c1d91087c47a4";
+             :temIndex "54";
+             :temData "2020-08-23";
+             :temApelido "Huber" ;
+             :temPrimeiroNome "Flynn" ;
+             :temNome "Flynn Huber";
+             :temExame :e_60b3eeb97c9c1d91087c47a4 .
+
+###  e_60b3eeb97c9c1d91087c47a4
+:e_60b3eeb97c9c1d91087c47a4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-23" .
+
+###  a_60b3eeb97aabcddbffca43f3
+:a_60b3eeb97aabcddbffca43f3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97aabcddbffca43f3";
+             :temIndex "55";
+             :temData "2019-03-29";
+             :temApelido "Allen" ;
+             :temPrimeiroNome "Elaine" ;
+             :temNome "Elaine Allen";
+             :temExame :e_60b3eeb97aabcddbffca43f3 .
+
+###  e_60b3eeb97aabcddbffca43f3
+:e_60b3eeb97aabcddbffca43f3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-29" .
+
+###  a_60b3eeb935b59a6c217af521
+:a_60b3eeb935b59a6c217af521 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb935b59a6c217af521";
+             :temIndex "56";
+             :temData "2020-09-24";
+             :temApelido "Pate" ;
+             :temPrimeiroNome "Gwen" ;
+             :temNome "Gwen Pate";
+             :temExame :e_60b3eeb935b59a6c217af521 .
+
+###  e_60b3eeb935b59a6c217af521
+:e_60b3eeb935b59a6c217af521 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-24" .
+
+###  a_60b3eeb972a330700a58a10a
+:a_60b3eeb972a330700a58a10a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb972a330700a58a10a";
+             :temIndex "57";
+             :temData "2020-08-19";
+             :temApelido "Solis" ;
+             :temPrimeiroNome "Leila" ;
+             :temNome "Leila Solis";
+             :temExame :e_60b3eeb972a330700a58a10a .
+
+###  e_60b3eeb972a330700a58a10a
+:e_60b3eeb972a330700a58a10a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-19" .
+
+###  a_60b3eeb9a78530cac96a3f79
+:a_60b3eeb9a78530cac96a3f79 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a78530cac96a3f79";
+             :temIndex "58";
+             :temData "2021-04-17";
+             :temApelido "Heath" ;
+             :temPrimeiroNome "Mercedes" ;
+             :temNome "Mercedes Heath";
+             :temExame :e_60b3eeb9a78530cac96a3f79 .
+
+###  e_60b3eeb9a78530cac96a3f79
+:e_60b3eeb9a78530cac96a3f79 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-04-17" .
+
+###  a_60b3eeb9235de1538781611d
+:a_60b3eeb9235de1538781611d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9235de1538781611d";
+             :temIndex "59";
+             :temData "2019-05-03";
+             :temApelido "Fitzpatrick" ;
+             :temPrimeiroNome "Althea" ;
+             :temNome "Althea Fitzpatrick";
+             :temExame :e_60b3eeb9235de1538781611d .
+
+###  e_60b3eeb9235de1538781611d
+:e_60b3eeb9235de1538781611d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-03" .
+
+###  a_60b3eeb9f7311f86c6a33646
+:a_60b3eeb9f7311f86c6a33646 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9f7311f86c6a33646";
+             :temIndex "60";
+             :temData "2019-12-09";
+             :temApelido "Morton" ;
+             :temPrimeiroNome "Arlene" ;
+             :temNome "Arlene Morton";
+             :temExame :e_60b3eeb9f7311f86c6a33646 .
+
+###  e_60b3eeb9f7311f86c6a33646
+:e_60b3eeb9f7311f86c6a33646 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-09" .
+
+###  a_60b3eeb9354e8a0e1817c201
+:a_60b3eeb9354e8a0e1817c201 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9354e8a0e1817c201";
+             :temIndex "61";
+             :temData "2020-09-26";
+             :temApelido "Gonzales" ;
+             :temPrimeiroNome "Mosley" ;
+             :temNome "Mosley Gonzales";
+             :temExame :e_60b3eeb9354e8a0e1817c201 .
+
+###  e_60b3eeb9354e8a0e1817c201
+:e_60b3eeb9354e8a0e1817c201 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-26" .
+
+###  a_60b3eeb9e6ca114d8ab96bc4
+:a_60b3eeb9e6ca114d8ab96bc4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9e6ca114d8ab96bc4";
+             :temIndex "62";
+             :temData "2019-08-31";
+             :temApelido "Hardy" ;
+             :temPrimeiroNome "Torres" ;
+             :temNome "Torres Hardy";
+             :temExame :e_60b3eeb9e6ca114d8ab96bc4 .
+
+###  e_60b3eeb9e6ca114d8ab96bc4
+:e_60b3eeb9e6ca114d8ab96bc4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-31" .
+
+###  a_60b3eeb945accec6f3eb9c3d
+:a_60b3eeb945accec6f3eb9c3d rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb945accec6f3eb9c3d";
+             :temIndex "63";
+             :temData "2020-12-13";
+             :temApelido "Petersen" ;
+             :temPrimeiroNome "Annmarie" ;
+             :temNome "Annmarie Petersen";
+             :temExame :e_60b3eeb945accec6f3eb9c3d .
+
+###  e_60b3eeb945accec6f3eb9c3d
+:e_60b3eeb945accec6f3eb9c3d rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-13" .
+
+###  a_60b3eeb92a2f391cda5b305e
+:a_60b3eeb92a2f391cda5b305e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb92a2f391cda5b305e";
+             :temIndex "64";
+             :temData "2020-12-03";
+             :temApelido "Green" ;
+             :temPrimeiroNome "Osborn" ;
+             :temNome "Osborn Green";
+             :temExame :e_60b3eeb92a2f391cda5b305e .
+
+###  e_60b3eeb92a2f391cda5b305e
+:e_60b3eeb92a2f391cda5b305e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-03" .
+
+###  a_60b3eeb9a57cc0f98a998c9a
+:a_60b3eeb9a57cc0f98a998c9a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a57cc0f98a998c9a";
+             :temIndex "65";
+             :temData "2020-08-26";
+             :temApelido "Dominguez" ;
+             :temPrimeiroNome "Davenport" ;
+             :temNome "Davenport Dominguez";
+             :temExame :e_60b3eeb9a57cc0f98a998c9a .
+
+###  e_60b3eeb9a57cc0f98a998c9a
+:e_60b3eeb9a57cc0f98a998c9a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-26" .
+
+###  a_60b3eeb94b33eaa274778def
+:a_60b3eeb94b33eaa274778def rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb94b33eaa274778def";
+             :temIndex "66";
+             :temData "2019-12-20";
+             :temApelido "Massey" ;
+             :temPrimeiroNome "Barton" ;
+             :temNome "Barton Massey";
+             :temExame :e_60b3eeb94b33eaa274778def .
+
+###  e_60b3eeb94b33eaa274778def
+:e_60b3eeb94b33eaa274778def rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-12-20" .
+
+###  a_60b3eeb9a78fd4bfe9e36453
+:a_60b3eeb9a78fd4bfe9e36453 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a78fd4bfe9e36453";
+             :temIndex "67";
+             :temData "2019-06-09";
+             :temApelido "Bowen" ;
+             :temPrimeiroNome "Holly" ;
+             :temNome "Holly Bowen";
+             :temExame :e_60b3eeb9a78fd4bfe9e36453 .
+
+###  e_60b3eeb9a78fd4bfe9e36453
+:e_60b3eeb9a78fd4bfe9e36453 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-09" .
+
+###  a_60b3eeb9868c63b27774163f
+:a_60b3eeb9868c63b27774163f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9868c63b27774163f";
+             :temIndex "68";
+             :temData "2020-06-28";
+             :temApelido "Crawford" ;
+             :temPrimeiroNome "Dennis" ;
+             :temNome "Dennis Crawford";
+             :temExame :e_60b3eeb9868c63b27774163f .
+
+###  e_60b3eeb9868c63b27774163f
+:e_60b3eeb9868c63b27774163f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-28" .
+
+###  a_60b3eeb9a857578bd25302db
+:a_60b3eeb9a857578bd25302db rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9a857578bd25302db";
+             :temIndex "69";
+             :temData "2019-05-25";
+             :temApelido "Mcleod" ;
+             :temPrimeiroNome "Oliver" ;
+             :temNome "Oliver Mcleod";
+             :temExame :e_60b3eeb9a857578bd25302db .
+
+###  e_60b3eeb9a857578bd25302db
+:e_60b3eeb9a857578bd25302db rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-05-25" .
+
+###  a_60b3eeb9abbaec58aed568da
+:a_60b3eeb9abbaec58aed568da rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9abbaec58aed568da";
+             :temIndex "70";
+             :temData "2019-03-01";
+             :temApelido "Orr" ;
+             :temPrimeiroNome "Tameka" ;
+             :temNome "Tameka Orr";
+             :temExame :e_60b3eeb9abbaec58aed568da .
+
+###  e_60b3eeb9abbaec58aed568da
+:e_60b3eeb9abbaec58aed568da rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-03-01" .
+
+###  a_60b3eeb90d885cf3327fe6bd
+:a_60b3eeb90d885cf3327fe6bd rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb90d885cf3327fe6bd";
+             :temIndex "71";
+             :temData "2020-05-28";
+             :temApelido "Strickland" ;
+             :temPrimeiroNome "Foster" ;
+             :temNome "Foster Strickland";
+             :temExame :e_60b3eeb90d885cf3327fe6bd .
+
+###  e_60b3eeb90d885cf3327fe6bd
+:e_60b3eeb90d885cf3327fe6bd rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-28" .
+
+###  a_60b3eeb91ded4fa3db5fdf8e
+:a_60b3eeb91ded4fa3db5fdf8e rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91ded4fa3db5fdf8e";
+             :temIndex "72";
+             :temData "2019-10-26";
+             :temApelido "Rodgers" ;
+             :temPrimeiroNome "Marlene" ;
+             :temNome "Marlene Rodgers";
+             :temExame :e_60b3eeb91ded4fa3db5fdf8e .
+
+###  e_60b3eeb91ded4fa3db5fdf8e
+:e_60b3eeb91ded4fa3db5fdf8e rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-26" .
+
+###  a_60b3eeb909f2540c651ec8ff
+:a_60b3eeb909f2540c651ec8ff rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb909f2540c651ec8ff";
+             :temIndex "73";
+             :temData "2020-04-12";
+             :temApelido "Mathews" ;
+             :temPrimeiroNome "Shari" ;
+             :temNome "Shari Mathews";
+             :temExame :e_60b3eeb909f2540c651ec8ff .
+
+###  e_60b3eeb909f2540c651ec8ff
+:e_60b3eeb909f2540c651ec8ff rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-04-12" .
+
+###  a_60b3eeb91c3038d321c60bb3
+:a_60b3eeb91c3038d321c60bb3 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91c3038d321c60bb3";
+             :temIndex "74";
+             :temData "2021-05-07";
+             :temApelido "Rasmussen" ;
+             :temPrimeiroNome "Josie" ;
+             :temNome "Josie Rasmussen";
+             :temExame :e_60b3eeb91c3038d321c60bb3 .
+
+###  e_60b3eeb91c3038d321c60bb3
+:e_60b3eeb91c3038d321c60bb3 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-05-07" .
+
+###  a_60b3eeb9c4b1d5f4d4a0099b
+:a_60b3eeb9c4b1d5f4d4a0099b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c4b1d5f4d4a0099b";
+             :temIndex "75";
+             :temData "2020-06-22";
+             :temApelido "Walton" ;
+             :temPrimeiroNome "Shelton" ;
+             :temNome "Shelton Walton";
+             :temExame :e_60b3eeb9c4b1d5f4d4a0099b .
+
+###  e_60b3eeb9c4b1d5f4d4a0099b
+:e_60b3eeb9c4b1d5f4d4a0099b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-06-22" .
+
+###  a_60b3eeb9cded7ae5d2724d52
+:a_60b3eeb9cded7ae5d2724d52 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9cded7ae5d2724d52";
+             :temIndex "76";
+             :temData "2020-11-21";
+             :temApelido "Russell" ;
+             :temPrimeiroNome "Odonnell" ;
+             :temNome "Odonnell Russell";
+             :temExame :e_60b3eeb9cded7ae5d2724d52 .
+
+###  e_60b3eeb9cded7ae5d2724d52
+:e_60b3eeb9cded7ae5d2724d52 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-21" .
+
+###  a_60b3eeb91485796dedd2444b
+:a_60b3eeb91485796dedd2444b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91485796dedd2444b";
+             :temIndex "77";
+             :temData "2021-02-04";
+             :temApelido "Le" ;
+             :temPrimeiroNome "Elba" ;
+             :temNome "Elba Le";
+             :temExame :e_60b3eeb91485796dedd2444b .
+
+###  e_60b3eeb91485796dedd2444b
+:e_60b3eeb91485796dedd2444b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-04" .
+
+###  a_60b3eeb9fbb0206c040aa4f1
+:a_60b3eeb9fbb0206c040aa4f1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9fbb0206c040aa4f1";
+             :temIndex "78";
+             :temData "2019-10-20";
+             :temApelido "Woodward" ;
+             :temPrimeiroNome "Sweet" ;
+             :temNome "Sweet Woodward";
+             :temExame :e_60b3eeb9fbb0206c040aa4f1 .
+
+###  e_60b3eeb9fbb0206c040aa4f1
+:e_60b3eeb9fbb0206c040aa4f1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-20" .
+
+###  a_60b3eeb9ef81456a2178baca
+:a_60b3eeb9ef81456a2178baca rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9ef81456a2178baca";
+             :temIndex "79";
+             :temData "2020-02-24";
+             :temApelido "Cummings" ;
+             :temPrimeiroNome "Wilkins" ;
+             :temNome "Wilkins Cummings";
+             :temExame :e_60b3eeb9ef81456a2178baca .
+
+###  e_60b3eeb9ef81456a2178baca
+:e_60b3eeb9ef81456a2178baca rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-02-24" .
+
+###  a_60b3eeb929306aeaff7f31a0
+:a_60b3eeb929306aeaff7f31a0 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb929306aeaff7f31a0";
+             :temIndex "80";
+             :temData "2021-02-04";
+             :temApelido "Noel" ;
+             :temPrimeiroNome "Rogers" ;
+             :temNome "Rogers Noel";
+             :temExame :e_60b3eeb929306aeaff7f31a0 .
+
+###  e_60b3eeb929306aeaff7f31a0
+:e_60b3eeb929306aeaff7f31a0 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-04" .
+
+###  a_60b3eeb99d4b85092734ded4
+:a_60b3eeb99d4b85092734ded4 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb99d4b85092734ded4";
+             :temIndex "81";
+             :temData "2021-03-08";
+             :temApelido "Ashley" ;
+             :temPrimeiroNome "Hodges" ;
+             :temNome "Hodges Ashley";
+             :temExame :e_60b3eeb99d4b85092734ded4 .
+
+###  e_60b3eeb99d4b85092734ded4
+:e_60b3eeb99d4b85092734ded4 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-03-08" .
+
+###  a_60b3eeb96b4950f33f42c5b6
+:a_60b3eeb96b4950f33f42c5b6 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb96b4950f33f42c5b6";
+             :temIndex "82";
+             :temData "2020-12-19";
+             :temApelido "Dillon" ;
+             :temPrimeiroNome "Curtis" ;
+             :temNome "Curtis Dillon";
+             :temExame :e_60b3eeb96b4950f33f42c5b6 .
+
+###  e_60b3eeb96b4950f33f42c5b6
+:e_60b3eeb96b4950f33f42c5b6 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-12-19" .
+
+###  a_60b3eeb9c4c935218799831f
+:a_60b3eeb9c4c935218799831f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c4c935218799831f";
+             :temIndex "83";
+             :temData "2021-02-08";
+             :temApelido "Oliver" ;
+             :temPrimeiroNome "Lelia" ;
+             :temNome "Lelia Oliver";
+             :temExame :e_60b3eeb9c4c935218799831f .
+
+###  e_60b3eeb9c4c935218799831f
+:e_60b3eeb9c4c935218799831f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-02-08" .
+
+###  a_60b3eeb91dbe172db8fd8f61
+:a_60b3eeb91dbe172db8fd8f61 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91dbe172db8fd8f61";
+             :temIndex "84";
+             :temData "2019-02-07";
+             :temApelido "Rogers" ;
+             :temPrimeiroNome "Fuentes" ;
+             :temNome "Fuentes Rogers";
+             :temExame :e_60b3eeb91dbe172db8fd8f61 .
+
+###  e_60b3eeb91dbe172db8fd8f61
+:e_60b3eeb91dbe172db8fd8f61 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-02-07" .
+
+###  a_60b3eeb9c7550e5dc5a5ddb1
+:a_60b3eeb9c7550e5dc5a5ddb1 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9c7550e5dc5a5ddb1";
+             :temIndex "85";
+             :temData "2020-05-28";
+             :temApelido "Lindsey" ;
+             :temPrimeiroNome "Carole" ;
+             :temNome "Carole Lindsey";
+             :temExame :e_60b3eeb9c7550e5dc5a5ddb1 .
+
+###  e_60b3eeb9c7550e5dc5a5ddb1
+:e_60b3eeb9c7550e5dc5a5ddb1 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-28" .
+
+###  a_60b3eeb95632a2a2915ae72b
+:a_60b3eeb95632a2a2915ae72b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb95632a2a2915ae72b";
+             :temIndex "86";
+             :temData "2019-07-27";
+             :temApelido "Johns" ;
+             :temPrimeiroNome "Martinez" ;
+             :temNome "Martinez Johns";
+             :temExame :e_60b3eeb95632a2a2915ae72b .
+
+###  e_60b3eeb95632a2a2915ae72b
+:e_60b3eeb95632a2a2915ae72b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-07-27" .
+
+###  a_60b3eeb9af56ea737b79ac30
+:a_60b3eeb9af56ea737b79ac30 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9af56ea737b79ac30";
+             :temIndex "87";
+             :temData "2020-07-21";
+             :temApelido "Holland" ;
+             :temPrimeiroNome "Kellie" ;
+             :temNome "Kellie Holland";
+             :temExame :e_60b3eeb9af56ea737b79ac30 .
+
+###  e_60b3eeb9af56ea737b79ac30
+:e_60b3eeb9af56ea737b79ac30 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-21" .
+
+###  a_60b3eeb9e387855b0de81d09
+:a_60b3eeb9e387855b0de81d09 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9e387855b0de81d09";
+             :temIndex "88";
+             :temData "2019-06-27";
+             :temApelido "Kirk" ;
+             :temPrimeiroNome "Mathis" ;
+             :temNome "Mathis Kirk";
+             :temExame :e_60b3eeb9e387855b0de81d09 .
+
+###  e_60b3eeb9e387855b0de81d09
+:e_60b3eeb9e387855b0de81d09 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-06-27" .
+
+###  a_60b3eeb93bfe7ecd8361f659
+:a_60b3eeb93bfe7ecd8361f659 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb93bfe7ecd8361f659";
+             :temIndex "89";
+             :temData "2019-10-22";
+             :temApelido "Shelton" ;
+             :temPrimeiroNome "Bertha" ;
+             :temNome "Bertha Shelton";
+             :temExame :e_60b3eeb93bfe7ecd8361f659 .
+
+###  e_60b3eeb93bfe7ecd8361f659
+:e_60b3eeb93bfe7ecd8361f659 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-10-22" .
+
+###  a_60b3eeb9860033876d65f5f7
+:a_60b3eeb9860033876d65f5f7 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9860033876d65f5f7";
+             :temIndex "90";
+             :temData "2020-01-08";
+             :temApelido "Diaz" ;
+             :temPrimeiroNome "Bonnie" ;
+             :temNome "Bonnie Diaz";
+             :temExame :e_60b3eeb9860033876d65f5f7 .
+
+###  e_60b3eeb9860033876d65f5f7
+:e_60b3eeb9860033876d65f5f7 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-01-08" .
+
+###  a_60b3eeb97a2511a770990f0f
+:a_60b3eeb97a2511a770990f0f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97a2511a770990f0f";
+             :temIndex "91";
+             :temData "2020-08-23";
+             :temApelido "Talley" ;
+             :temPrimeiroNome "Becker" ;
+             :temNome "Becker Talley";
+             :temExame :e_60b3eeb97a2511a770990f0f .
+
+###  e_60b3eeb97a2511a770990f0f
+:e_60b3eeb97a2511a770990f0f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-08-23" .
+
+###  a_60b3eeb9080a93e404ab974a
+:a_60b3eeb9080a93e404ab974a rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9080a93e404ab974a";
+             :temIndex "92";
+             :temData "2019-08-11";
+             :temApelido "Bell" ;
+             :temPrimeiroNome "Zelma" ;
+             :temNome "Zelma Bell";
+             :temExame :e_60b3eeb9080a93e404ab974a .
+
+###  e_60b3eeb9080a93e404ab974a
+:e_60b3eeb9080a93e404ab974a rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-08-11" .
+
+###  a_60b3eeb96e988bb711c0c940
+:a_60b3eeb96e988bb711c0c940 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb96e988bb711c0c940";
+             :temIndex "93";
+             :temData "2019-09-29";
+             :temApelido "Cox" ;
+             :temPrimeiroNome "Stanton" ;
+             :temNome "Stanton Cox";
+             :temExame :e_60b3eeb96e988bb711c0c940 .
+
+###  e_60b3eeb96e988bb711c0c940
+:e_60b3eeb96e988bb711c0c940 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2019-09-29" .
+
+###  a_60b3eeb97d329fb5b3d7379b
+:a_60b3eeb97d329fb5b3d7379b rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb97d329fb5b3d7379b";
+             :temIndex "94";
+             :temData "2020-07-15";
+             :temApelido "Shepherd" ;
+             :temPrimeiroNome "Cindy" ;
+             :temNome "Cindy Shepherd";
+             :temExame :e_60b3eeb97d329fb5b3d7379b .
+
+###  e_60b3eeb97d329fb5b3d7379b
+:e_60b3eeb97d329fb5b3d7379b rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-07-15" .
+
+###  a_60b3eeb95b00f32d469ef4b2
+:a_60b3eeb95b00f32d469ef4b2 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb95b00f32d469ef4b2";
+             :temIndex "95";
+             :temData "2020-09-20";
+             :temApelido "Buckner" ;
+             :temPrimeiroNome "Knapp" ;
+             :temNome "Knapp Buckner";
+             :temExame :e_60b3eeb95b00f32d469ef4b2 .
+
+###  e_60b3eeb95b00f32d469ef4b2
+:e_60b3eeb95b00f32d469ef4b2 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-09-20" .
+
+###  a_60b3eeb91accf4bd8b426245
+:a_60b3eeb91accf4bd8b426245 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb91accf4bd8b426245";
+             :temIndex "96";
+             :temData "2020-11-27";
+             :temApelido "Mitchell" ;
+             :temPrimeiroNome "Callahan" ;
+             :temNome "Callahan Mitchell";
+             :temExame :e_60b3eeb91accf4bd8b426245 .
+
+###  e_60b3eeb91accf4bd8b426245
+:e_60b3eeb91accf4bd8b426245 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-11-27" .
+
+###  a_60b3eeb9dd4dc919156890ee
+:a_60b3eeb9dd4dc919156890ee rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9dd4dc919156890ee";
+             :temIndex "97";
+             :temData "2021-01-10";
+             :temApelido "Lyons" ;
+             :temPrimeiroNome "Allie" ;
+             :temNome "Allie Lyons";
+             :temExame :e_60b3eeb9dd4dc919156890ee .
+
+###  e_60b3eeb9dd4dc919156890ee
+:e_60b3eeb9dd4dc919156890ee rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-10" .
+
+###  a_60b3eeb9d9f01093dc14973f
+:a_60b3eeb9d9f01093dc14973f rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9d9f01093dc14973f";
+             :temIndex "98";
+             :temData "2020-05-08";
+             :temApelido "Bryant" ;
+             :temPrimeiroNome "Tammy" ;
+             :temNome "Tammy Bryant";
+             :temExame :e_60b3eeb9d9f01093dc14973f .
+
+###  e_60b3eeb9d9f01093dc14973f
+:e_60b3eeb9d9f01093dc14973f rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2020-05-08" .
+
+###  a_60b3eeb9d027f625a1b63723
+:a_60b3eeb9d027f625a1b63723 rdf:type owl:NamedIndividual ,
+             :Atleta ;
+             :temId "60b3eeb9d027f625a1b63723";
+             :temIndex "99";
+             :temData "2021-01-02";
+             :temApelido "Rosario" ;
+             :temPrimeiroNome "Carissa" ;
+             :temNome "Carissa Rosario";
+             :temExame :e_60b3eeb9d027f625a1b63723 .
+
+###  e_60b3eeb9d027f625a1b63723
+:e_60b3eeb9d027f625a1b63723 rdf:type owl:NamedIndividual ,
+            :Exame ;
+            :temData "2021-01-02" .
