@@ -29,7 +29,7 @@ Os dados do ficheiro JSON são apresentados da seguinte maneira:
       "federado": false,
       "resultado": true
     },
-  // ...
+    //...
 ]
 ```
 ## Classes Geradas
