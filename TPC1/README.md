@@ -8,6 +8,7 @@ UC: RPCW
 
 O objetivo deste trabalho é a conversão automática de um ficheiro em formato JSON para Protégé.
 
+## Exemplo do Input (Ficheiro JSON)
 Os dados do ficheiro JSON são apresentados da seguinte maneira:
 
 ```json
@@ -29,7 +30,6 @@ Os dados do ficheiro JSON são apresentados da seguinte maneira:
       "federado": false,
       "resultado": true
     },
-    //...
 ]
 ```
 ## Classes Geradas
@@ -50,7 +50,7 @@ Para a Classe Exame geraram-se os seguintes atributos: temDataEMD e temResultado
 
 Não foram gerados atributos para a Classe Clube.
 
-## Exemplo do Output Final do Ficheiro Gerado
+## Exemplo do Output (Ficheiro TTL)
 ```turtle
 ###  a_60b3ee0ee00725274024d5a2
 :a_60b3ee0ee00725274024d5a2 rdf:type owl:NamedIndividual ,
