@@ -212,4 +212,25 @@ SELECT ?rei ?nome ?dataNascimento ?cognomes ?dinastia ?name WHERE {
 | :rei34     | D. Manuel II                  | 15 de novembro de 1889| O Patriota, O Desventurado, O Estudioso, O Bibliófilo, O Rei-Saudade | :dinastia4 - Dinastia de Bragança / Dinastia Brigantina |
 
 
-## Alínea 
+## Alínea G - Qual a distribuição dos reis pelas 4 dinastias?
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?dinastia (COUNT(?rei) AS ?numeroDeReis) WHERE {
+  ?rei a :Rei .
+  ?rei :temReinado ?reinado .
+  ?reinado :dinastia ?dinastia .
+} 
+GROUP BY ?dinastia
+```
+
+### Output
+
+| Dinastia  | Número de Reis         |
+|-----------|------------------------|
+| :dinastia2| 10                     |
+| :dinastia1| 9                      |
+| :dinastia3| 3                      |
+| :dinastia4| 12                     |
