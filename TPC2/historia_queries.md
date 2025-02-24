@@ -157,7 +157,7 @@ SELECT ?rei ?nome ?dataNascimento ?cognomes WHERE {
 | :rei34   | D. Manuel II                    | 15 de novembro de 1889  | O Patriota, O Desventurado, O Estudioso, O Bibliófilo, O Rei-Saudade    |
 
 
-### Alínea F - Acrescenta à tabela anterior a dinastia em que cada rei reinou.
+## Alínea F - Acrescenta à tabela anterior a dinastia em que cada rei reinou.
 
 ```(sparql)
 prefix owl: <http://www.w3.org/2002/07/owl#>
