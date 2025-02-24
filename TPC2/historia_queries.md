@@ -1,6 +1,6 @@
-# Queries com SPARQL - GraphDB"
+# Queries com SPARQL - GraphDB
 
-A ontologia utilizada como foco de estudo contém todos os detalhes sobre a História de Portugal."
+A ontologia utilizada como foco de estudo contém todos os detalhes sobre a História de Portugal.
 
 ## Alínea A - Quantos triplos existem na Ontologia?
 
