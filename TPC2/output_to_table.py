@@ -1,8 +1,8 @@
 import re
 
 def process_string(input_string):
-    # Expressão regular para capturar os dados
-    pattern = r":descobrimento(\d+)\s*\"(\d{4}(?:-\d{4})?)\"\s*\"(.*?)\""
+    # Expressão regular para capturar os dados, agora com tratamento para intervalos de datas
+    pattern = r":descobrimento(\d+)\s*\"([^\"]+)\"\s*\"(.*?)\""
     
     # Encontrar todas as correspondências
     matches = re.findall(pattern, input_string, re.DOTALL)
