@@ -12,7 +12,9 @@ SELECT (COUNT(*) AS ?totalTriplos) WHERE {
 }
 ```
 
-Output: 4587
+```(txt)
+ Output: 4587 
+```
 
 
 ## Alínea B - Que classes estão definidas?
@@ -24,7 +26,7 @@ select ?class where {
     ?class a owl:Class .
 }
 ```
-
+```(txt)
 Output: 
 :Rainha
 :Monarca
@@ -49,3 +51,4 @@ _:node16
 
 :Presidente
 _:node20
+```
