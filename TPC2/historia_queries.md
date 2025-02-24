@@ -234,3 +234,35 @@ GROUP BY ?dinastia
 | :dinastia1| 9                      |
 | :dinastia3| 3                      |
 | :dinastia4| 12                     |
+
+
+## Alínea H - Lista os descobrimentos (sua descrição) por ordem cronológica.
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?descobrimento ?data ?descricao WHERE {
+  ?descobrimento a :Descobrimento .
+  ?descobrimento :data ?data .
+  ?descobrimento :notas ?descricao .
+} 
+ORDER BY ?data
+```
+
+### Output
+
+| descobrimento   | data      | descricao                                              |
+|-----------------|-----------|---------------------------------------------------------|
+| :descobrimento1  | 1336-1341 | Provável primeira expedição às ilhas Canárias.        |
+| :descobrimento2  | 1415      | Conquista de Ceuta, início da expansão portuguesa.    |
+| :descobrimento3  | 1419      | Descoberta da Ilha de Porto Santo (Madeira).         |
+| :descobrimento4  | 1420      | Descoberta da Ilha da Madeira.                        |
+| :descobrimento5  | 1422      | Cabo Não é ultrapassado, alcançando-se o Bojador.    |
+| :descobrimento6  | 1427      | Descoberta das ilhas ocidentais e centrais dos Açores.|
+| :descobrimento7  | 1434      | Gil Eanes dobra o Cabo Bojador.                       |
+| :descobrimento8  | 1435-1436 | Descoberta de Angra de Ruivos e chegada ao Rio de Ouro.|
+| :descobrimento9  | 1441      | Nuno Tristão chega ao Cabo Branco.                    |
+| :descobrimento10 | 1443      | D. Pedro decreta monopólio da navegação na costa Africana. |
+| :descobrimento11 | 1444      | Dinis Dias descobre Cabo Verde e a Ilha de Palma.    |
+| :descobrimento12 | 1445      | Álvaro Fernandes chega ao Senegal.                    |
