@@ -12,8 +12,10 @@ SELECT (COUNT(*) AS ?totalTriplos) WHERE {
 }
 ```
 
+### Output
+
 ```(txt)
- Output: 4587 
+4587 
 ```
 
 
@@ -26,8 +28,10 @@ select ?class where {
     ?class a owl:Class .
 }
 ```
+
+### Output
+
 ```(txt)
-Output: 
 :Rainha
 :Monarca
 _:node1
