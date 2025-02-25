@@ -378,3 +378,155 @@ SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
 | :conquista1   | 1135  | Fundação do Castelo              | :rei1  | D. Afonso I |
 | :conquista2   | 1139  | Batalha de Ourique               | :rei1  | D. Afonso I |
 
+
+## Alínea J - Calcula uma tabela com o nome, data de nascimento e número de mandatos de todos os presidentes portugueses.
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?presidente ?nome ?dataDeNascimento (COUNT(?mandatos) AS ?numMandatos) WHERE {
+  ?presidente a :Presidente .
+  ?presidente :nome ?nome .  
+  ?presidente :nascimento ?dataDeNascimento .  
+  ?presidente :mandato ?mandatos .
+}  
+GROUP BY ?presidente ?nome ?dataDeNascimento
+```
+
+### Output
+
+| Presidente             | Nome                                          | Data de Nascimento        | Número de Mandatos |
+|---------------|-------------------------------------------------|---------------------------|--------------------|
+| :presidente8  | José Mendes Cabeçadas Júnior                   | 19 de setembro de 1883    | 1 |
+| :presidente10 | António Óscar de Fragoso Carmona               | 24 de novembro de 1869    | 4 |
+| :presidente11 | António de Oliveira Salazar                    | 28 de abril de 1889      | 1 |
+| :presidente12 | Francisco Higino Craveiro Lopes                | 12 de abril de 1894      | 1 |
+| :presidente13 | Américo Deus Rodrigues Thomaz                 | 19 de novembro de 1894   | 1 |
+| :presidente14 | António Sebastião Ribeiro de Spínola          | 11 de abril de 1910      | 2 |
+| :presidente4  | Sidónio Bernardino Cardoso da Silva Pais      | 1 de maio de 1872        | 2 |
+| :presidente5  | João do Canto e Castro Silva Antunes Júnior   | 19 de maio de 1862       | 2 |
+| :presidente7  | Manuel Teixeira Gomes                         | 27 de maio de 1860       | 1 |
+| :presidente3  | Bernardino Luís Machado Guimarães            | 28 de março de 1851      | 2 |
+| :presidente1  | Joaquim Teófilo Fernandes Braga              | 24 de fevereiro de 1843  | 2 |
+| :presidente2  | Manuel José de Arriaga Brum da Silveira e Peyrelongue | 8 de julho de 1840  | 1 |
+| :presidente16 | Mário Alberto Nobre Lopes Soares             | 7 de dezembro de 1924    | 1 |
+| :presidente6  | António José de Almeida                      | 17 de julho de 1866      | 1 |
+| :presidente17 | Aníbal António Cavaco Silva                  | 15 de julho de 1939      | 1 |
+| :presidente9  | Manuel de Oliveira Gomes da Costa            | 14 de janeiro de 1863    | 2 |
+| :presidente15 | Francisco da Costa Gomes                     | 30 de junho de 1914      | 1 |
+
+
+## Alínea K - Quantos mandatos teve o presidente Sidónio Pais? Em que datas iniciaram e terminaram estes mandatos?
+
+Dois mandatos, como poderíamos verificar com a alínea anterior. 
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?presidente ?m ?c ?f WHERE {
+  ?presidente a :Presidente .
+  ?presidente :nome "Sidónio Bernardino Cardoso da Silva Pais" . 
+  ?presidente :mandato ?m .
+  ?m :comeco ?c .
+  ?m :fim ?f .
+}  
+```
+
+### Output
+
+| Presidente    | Mandato   | Início                | Fim                   |
+|--------------|----------|----------------------|----------------------|
+| :presidente4 | :mandato5 | 12 de dezembro de 1917 | 27 de dezembro de 1917 |
+| :presidente4 | :mandato6 | 27 de dezembro de 1917 | 14 de dezembro de 1918 |
+
+
+## Alínea L - Quais os nomes dos partidos políticos presentes na ontologia?
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?partido ?nome WHERE {
+  ?partido a :Partido .
+  ?partido :nome ?nome
+} 
+```
+
+### Output
+
+| Partido      | Nome do Partido       |
+|--------------|-----------------------|
+| :partido4    | Independente          |
+| :partido9    | União Nacional        |
+| :partido5    | Nacional Republicano  |
+| :partido3    | Democrático           |
+| :partido1    | Republicano           |
+| :partido10   | Socialista            |
+| :partido6    | Evolucionista         |
+| :partido7    | Liberal               |
+| :partido8    | Nacionalista          |
+| :partido11   | Social Democrata      |
+
+
+## Alínea M - Qual a distribuição dos militantes por cada partido político?
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?partido ?nome ?name ?militante WHERE {
+  ?partido a :Partido .
+  ?partido :nome ?nome .
+  ?partido :temMilitante ?militante .
+  ?militante :nome ?name .
+}  
+GROUP BY ?partido ?nome ?name ?militante
+```
+
+### Output
+ 
+| Partido ID  | Nome do Partido      | Presidente Nome                             | Presidente ID  |
+|-------------|----------------------|---------------------------------------------|----------------|
+| :partido4   | Independente          | José Mendes Cabeçadas Júnior               | :presidente8   |
+| :partido4   | Independente          | António Óscar de Fragoso Carmona           | :presidente10  |
+| :partido4   | Independente          | António Sebastião Ribeiro de Spínola       | :presidente14  |
+| :partido4   | Independente          | Sidónio Bernardino Cardoso da Silva Pais   | :presidente4   |
+| :partido9   | União Nacional        | António Óscar de Fragoso Carmona           | :presidente10  |
+| :partido9   | União Nacional        | António de Oliveira Salazar                | :presidente11  |
+| :partido9   | União Nacional        | Francisco Higino Craveiro Lopes            | :presidente12  |
+| :partido9   | União Nacional        | Américo Deus Rodrigues Thomaz              | :presidente13  |
+| :partido5   | Nacional Republicano  | Sidónio Bernardino Cardoso da Silva Pais   | :presidente13  |
+| :partido5   | Nacional Republicano  | João do Canto e Castro Silva Antunes Júnior| :presidente4   |
+| :partido3   | Democrático           | Manuel Teixeira Gomes                      | :presidente7   |
+| :partido3   | Democrático           | Bernardino Luís Machado Guimarães          | :presidente3   |
+| :partido1   | Republicano           | Joaquim Teófilo Fernandes Braga            | :presidente1   |
+| :partido1   | Republicano           | Manuel José de Arriaga Brum da Silveira e Peyrelongue | :presidente2   |
+| :partido10  | Socialista            | Mário Alberto Nobre Lopes Soares           | :presidente2   |
+| :partido6   | Evolucionista         | António José de Almeida                    | :presidente6   |
+| :partido7   | Liberal               | António José de Almeida                    | :presidente6   |
+| :partido8   | Nacionalista          | António José de Almeida                    | :presidente6   |
+| :partido11  | Social Democrata      | Aníbal António Cavaco Silva                | :presidente17  |
+
+
+## Alínea N - Qual o partido com o maior número de presidentes?
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?partido ?n (COUNT(?presidente) AS ?numPresidentes) WHERE {
+  ?presidente :partido ?partido .
+  ?partido :nome ?n .
+} 
+GROUP BY ?partido ?n
+ORDER BY DESC(?numPresidentes)
+LIMIT 1
+```
+
+### Output 
+
+| Partido    | Nome       | Número de Presidentes |
+|------------|------------|-----------------------|
+| :partido4  | Independente | 4                     |
