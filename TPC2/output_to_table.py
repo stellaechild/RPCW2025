@@ -27,7 +27,7 @@ def conquista(input_string):
     matches = re.findall(pattern, conquistas, re.DOTALL)
 
     # Criar a tabela em Markdown
-    markdown_table = "| Conquista      | Data  | Descrição                        | Monarca  | Nome       |\n"
+    markdown_table = "| Conquista      | Data  | Nome                        | Monarca  | Nome       |\n"
     markdown_table += "|---------------|-------|----------------------------------|--------|------------|\n"
 
     # Iterar sobre as correspondências e adicionar à tabela

@@ -355,7 +355,7 @@ SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
 ```
 ### Output
 
-| Conquista      | Data  | Descrição                        | Monarca  | Nome       |
+| Conquista      | Data  | Nome                        | Monarca  | Nome       |
 |---------------|-------|----------------------------------|--------|------------|
 | :conquista11  | 1159  | Conquista de Beja                | :rei1  | D. Afonso I |
 | :conquista9   | 1159  | Conquista do Castelo de Cera     | :rei1  | D. Afonso I |
@@ -377,3 +377,4 @@ SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
 | :conquista18  | 1189  | Cerco de Silves                  | :rei2  | D. Sancho I |
 | :conquista1   | 1135  | Fundação do Castelo              | :rei1  | D. Afonso I |
 | :conquista2   | 1139  | Batalha de Ourique               | :rei1  | D. Afonso I |
+
