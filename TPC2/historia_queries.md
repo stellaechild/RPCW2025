@@ -336,3 +336,44 @@ ORDER BY ?data
 | :descobrimento78             | 1626      | Estêvão Cacella, missionário jesuíta, viajou através dos Himalaias e foi o primeiro europeu a entrar no Butão34 |
 | :descobrimento79             | 1636 – 1638 | Pedro Teixeira partiu de Belém do Pará subindo o rio Amazonas e alcançou Quito, no Equador, numa expedição de mais de mil homens. |
 | :descobrimento80             | 1660 – 1662 | (David Melgueiro partindo de Tanegashima poderá ter realizado a primeira travessia da passagem do Nordeste. 35 Viagem pouco documentada, ao serviço da marinha holandesa) |
+
+
+## Alínea I - Lista as várias conquistas, nome e data, juntamente com o nome que reinava no momento.
+
+```(sparql)
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
+
+SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
+  ?c a :Conquista .
+  ?c :data ?data .
+  ?c :nome ?nome .
+  ?c :temReinado ?reinado .
+  ?reinado :temMonarca ?monarca .
+  ?monarca :nome ?name .
+} 
+```
+### Output
+
+| Conquista        | Data      | Descrição                        | Rei            |
+|-----------------|-----------|----------------------------------|---------------|
+| :conquista11  | 1159      | Conquista de Beja                | D. Afonso I    |
+| :conquista9   | 1159      | Conquista do Castelo de Cera     | D. Afonso I    |
+| :conquista12  | 1162      | Reconquista de Beja              | D. Afonso I    |
+| :conquista8   | 1158      | Conquista                        | D. Afonso I    |
+| :conquista13  | 1165      | Conquista de Évora               | D. Afonso I    |
+| :conquista14  | 1166      | Tomada de Serpa                  | D. Afonso I    |
+| :conquista20  | 1340      | Batalha do Salado                | D. Afonso IV   |
+| :conquista5   | 1147      | Batalha de Sacavém               | D. Afonso I    |
+| :conquista4   | 1147      | Conquista de Lisboa              | D. Afonso I    |
+| :conquista3   | 1147      | Tomada do Castelo                | D. Afonso I    |
+| :conquista7   | 1147      | Tomada do Castelo                | D. Afonso I    |
+| :conquista10  | 1159      | Conquista de Évoramonte          | D. Afonso I    |
+| :conquista6   | 1147      | Tomada do Castelo                | D. Afonso I    |
+| :conquista19  | 1212      | Batalha Navas de Tolosa          | D. Afonso II   |
+| :conquista15  | 1166      | Tomada de Moura                  | D. Afonso I    |
+| :conquista16  | 1169      | Batalha de Badajoz               | D. Afonso I    |
+| :conquista17  | 1189      | Conquista de Alvor               | D. Sancho I    |
+| :conquista18  | 1189      | Cerco de Silves                  | D. Sancho I    |
+| :conquista1   | 1135      | Fundação do Castelo              | D. Afonso I    |
+| :conquista2   | 1139      | Batalha de Ourique               | D. Afonso I    |

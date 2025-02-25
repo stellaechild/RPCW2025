@@ -1,11 +1,11 @@
 import re
 
-def process_string(input_string):
+def descobrimento(input_string):
     # Expressão regular para capturar os dados, agora com tratamento para intervalos de datas
     pattern = r":descobrimento(\d+)\s*\"([^\"]+)\"\s*\"(.*?)\""
     
     # Encontrar todas as correspondências
-    matches = re.findall(pattern, input_string, re.DOTALL)
+    matches = re.findall(pattern, descobrimentos, re.DOTALL)
     
     # Criar a tabela em markdown
     markdown_table = "| Descobrimento      | Data      | Descrição                                              |\n"
@@ -18,8 +18,170 @@ def process_string(input_string):
     
     return markdown_table
 
+
+def conquista(input_string):
+    # Expressão regular para capturar conquistas
+    pattern = r":conquista(\d+)\s*\"([^\"]+)\"\s*\"(.*?)\"\s*:reinado\d+\s*:rei\d+\s*\"(.*?)\""
+    
+    # Encontrar todas as correspondências
+    matches = re.findall(pattern, conquistas, re.DOTALL)
+    
+    # Criar a tabela em markdown
+    markdown_table = "| Conquista        | Data      | Descrição                        | Rei            |\n"
+    markdown_table += "|-----------------|-----------|----------------------------------|---------------|\n"
+    
+    # Iterar sobre as correspondências e adicionar à tabela
+    for match in matches:
+        conquista, data, descricao, rei = match
+        markdown_table += f"| :conquista{conquista:<3} | {data:<9} | {descricao:<32} | {rei:<14} |\n"
+    
+    return markdown_table
+
 # Exemplo de string de entrada
-input_string = """
+conquistas = """
+:conquista11
+"1159"
+"Conquista de Beja"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista9
+"1159"
+"Conquista do Castelo de Cera"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista12
+"1162"
+"Reconquista de Beja"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista8
+"1158"
+"Conquista"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista13
+"1165"
+"Conquista de Évora"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista14
+"1166"
+"Tomada de Serpa"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista20
+"1340"
+"Batalha do Salado"
+:reinado7
+:rei7
+"D. Afonso IV"
+
+:conquista5
+"1147"
+"Batalha de Sacavém"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista4
+"1147"
+"Conquista de Lisboa"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista3
+"1147"
+"Tomada do Castelo"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista7
+"1147"
+"Tomada do Castelo"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista10
+"1159"
+"Conquista de Évoramonte"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista6
+"1147"
+"Tomada do Castelo"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista19
+"1212"
+"Batalha Navas de Tolosa"
+:reinado3
+:rei3
+"D. Afonso II"
+
+:conquista15
+"1166"
+"Tomada de Moura"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista16
+"1169"
+"Batalha de Badajoz"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista17
+"1189"
+"Conquista de Alvor"
+:reinado2
+:rei2
+"D. Sancho I"
+
+:conquista18
+"1189"
+"Cerco de Silves"
+:reinado2
+:rei2
+"D. Sancho I"
+
+:conquista1
+"1135"
+"Fundação do Castelo"
+:reinado1
+:rei1
+"D. Afonso I"
+
+:conquista2
+"1139"
+"Batalha de Ourique"
+:reinado1
+:rei1
+"D. Afonso I"
+"""
+
+
+descobrimentos = """
 :descobrimento1
 "1336"
 
@@ -432,7 +594,8 @@ input_string = """
 """
 
 # Gerar a tabela em Markdown
-markdown_output = process_string(input_string)
+# markdown_output = descobrimento(descobrimentos)
+markdown_output = conquista(conquistas)
 
 # Imprimir a tabela resultante
 print(markdown_output)
