@@ -355,25 +355,25 @@ SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
 ```
 ### Output
 
-| Conquista        | Data      | Descrição                        | Rei            |
-|-----------------|-----------|----------------------------------|---------------|
-| :conquista11  | 1159      | Conquista de Beja                | D. Afonso I    |
-| :conquista9   | 1159      | Conquista do Castelo de Cera     | D. Afonso I    |
-| :conquista12  | 1162      | Reconquista de Beja              | D. Afonso I    |
-| :conquista8   | 1158      | Conquista                        | D. Afonso I    |
-| :conquista13  | 1165      | Conquista de Évora               | D. Afonso I    |
-| :conquista14  | 1166      | Tomada de Serpa                  | D. Afonso I    |
-| :conquista20  | 1340      | Batalha do Salado                | D. Afonso IV   |
-| :conquista5   | 1147      | Batalha de Sacavém               | D. Afonso I    |
-| :conquista4   | 1147      | Conquista de Lisboa              | D. Afonso I    |
-| :conquista3   | 1147      | Tomada do Castelo                | D. Afonso I    |
-| :conquista7   | 1147      | Tomada do Castelo                | D. Afonso I    |
-| :conquista10  | 1159      | Conquista de Évoramonte          | D. Afonso I    |
-| :conquista6   | 1147      | Tomada do Castelo                | D. Afonso I    |
-| :conquista19  | 1212      | Batalha Navas de Tolosa          | D. Afonso II   |
-| :conquista15  | 1166      | Tomada de Moura                  | D. Afonso I    |
-| :conquista16  | 1169      | Batalha de Badajoz               | D. Afonso I    |
-| :conquista17  | 1189      | Conquista de Alvor               | D. Sancho I    |
-| :conquista18  | 1189      | Cerco de Silves                  | D. Sancho I    |
-| :conquista1   | 1135      | Fundação do Castelo              | D. Afonso I    |
-| :conquista2   | 1139      | Batalha de Ourique               | D. Afonso I    |
+| Conquista      | Data  | Descrição                        | Monarca  | Nome       |
+|---------------|-------|----------------------------------|--------|------------|
+| :conquista11  | 1159  | Conquista de Beja                | :rei1  | D. Afonso I |
+| :conquista9   | 1159  | Conquista do Castelo de Cera     | :rei1  | D. Afonso I |
+| :conquista12  | 1162  | Reconquista de Beja              | :rei1  | D. Afonso I |
+| :conquista8   | 1158  | Conquista                        | :rei1  | D. Afonso I |
+| :conquista13  | 1165  | Conquista de Évora               | :rei1  | D. Afonso I |
+| :conquista14  | 1166  | Tomada de Serpa                  | :rei1  | D. Afonso I |
+| :conquista20  | 1340  | Batalha do Salado                | :rei7  | D. Afonso IV |
+| :conquista5   | 1147  | Batalha de Sacavém               | :rei1  | D. Afonso I |
+| :conquista4   | 1147  | Conquista de Lisboa              | :rei1  | D. Afonso I |
+| :conquista3   | 1147  | Tomada do Castelo                | :rei1  | D. Afonso I |
+| :conquista7   | 1147  | Tomada do Castelo                | :rei1  | D. Afonso I |
+| :conquista10  | 1159  | Conquista de Évoramonte          | :rei1  | D. Afonso I |
+| :conquista6   | 1147  | Tomada do Castelo                | :rei1  | D. Afonso I |
+| :conquista19  | 1212  | Batalha Navas de Tolosa          | :rei3  | D. Afonso II |
+| :conquista15  | 1166  | Tomada de Moura                  | :rei1  | D. Afonso I |
+| :conquista16  | 1169  | Batalha de Badajoz               | :rei1  | D. Afonso I |
+| :conquista17  | 1189  | Conquista de Alvor               | :rei2  | D. Sancho I |
+| :conquista18  | 1189  | Cerco de Silves                  | :rei2  | D. Sancho I |
+| :conquista1   | 1135  | Fundação do Castelo              | :rei1  | D. Afonso I |
+| :conquista2   | 1139  | Batalha de Ourique               | :rei1  | D. Afonso I |

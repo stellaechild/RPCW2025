@@ -20,21 +20,20 @@ def descobrimento(input_string):
 
 
 def conquista(input_string):
-    # Expressão regular para capturar conquistas
-    pattern = r":conquista(\d+)\s*\"([^\"]+)\"\s*\"(.*?)\"\s*:reinado\d+\s*:rei\d+\s*\"(.*?)\""
-    
+    # Expressão regular para capturar conquistas e reis
+    pattern = r"(:conquista\d+)\s*\"([^\"]+)\"\s*\"(.*?)\"\s*:reinado\d+\s*(:rei\d+)\s*\"(.*?)\""
+
     # Encontrar todas as correspondências
     matches = re.findall(pattern, conquistas, re.DOTALL)
-    
-    # Criar a tabela em markdown
-    markdown_table = "| Conquista        | Data      | Descrição                        | Rei            |\n"
-    markdown_table += "|-----------------|-----------|----------------------------------|---------------|\n"
-    
+
+    # Criar a tabela em Markdown
+    markdown_table = "| Conquista      | Data  | Descrição                        | Monarca  | Nome       |\n"
+    markdown_table += "|---------------|-------|----------------------------------|--------|------------|\n"
+
     # Iterar sobre as correspondências e adicionar à tabela
-    for match in matches:
-        conquista, data, descricao, rei = match
-        markdown_table += f"| :conquista{conquista:<3} | {data:<9} | {descricao:<32} | {rei:<14} |\n"
-    
+    for conquista_id, data, descricao, rei_id, rei_nome in matches:
+        markdown_table += f"| {conquista_id:<13} | {data:<5} | {descricao:<32} | {rei_id:<6} | {rei_nome:<10} |\n"
+
     return markdown_table
 
 # Exemplo de string de entrada
