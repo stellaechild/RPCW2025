@@ -218,19 +218,21 @@ SELECT ?rei ?nome ?dataNascimento ?cognomes ?dinastia ?name WHERE {
 prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
 
-SELECT ?dinastia (COUNT(?rei) AS ?numeroDeReis) WHERE {
+SELECT ?dinastia (COUNT(distinct ?rei) AS ?numeroDeReis) WHERE {
   ?rei a :Rei .
   ?rei :temReinado ?reinado .
+# ?rei :temReinado/:dinastia/:nome ?dinastia
   ?reinado :dinastia ?dinastia .
 } 
 GROUP BY ?dinastia
+# ORDER BY ?dinastia
 ```
 
 ### Output
 
 | Dinastia  | Número de Reis         |
 |-----------|------------------------|
-| :dinastia2| 10                     |
+| :dinastia2| 8                      |
 | :dinastia1| 9                      |
 | :dinastia3| 3                      |
 | :dinastia4| 12                     |
@@ -345,10 +347,10 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
 
 SELECT ?c ?data ?nome ?reinado ?monarca ?name WHERE {
-  ?c a :Conquista .
-  ?c :data ?data .
-  ?c :nome ?nome .
-  ?c :temReinado ?reinado .
+  ?c a :Conquista ;
+     :data ?data ;
+     :nome ?nome ;
+     :temReinado ?reinado .
   ?reinado :temMonarca ?monarca .
   ?monarca :nome ?name .
 } 
@@ -386,10 +388,10 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix : <http://www.semanticweb.org/andre/ontologies/2015/6/historia#>
 
 SELECT ?presidente ?nome ?dataDeNascimento (COUNT(?mandatos) AS ?numMandatos) WHERE {
-  ?presidente a :Presidente .
-  ?presidente :nome ?nome .  
-  ?presidente :nascimento ?dataDeNascimento .  
-  ?presidente :mandato ?mandatos .
+  ?presidente a :Presidente ;
+                :nome ?nome ;  
+                :nascimento ?dataDeNascimento ;  
+                :mandato ?mandatos .
 }  
 GROUP BY ?presidente ?nome ?dataDeNascimento
 ```
@@ -483,6 +485,15 @@ SELECT ?partido ?nome ?name ?militante WHERE {
   ?militante :nome ?name .
 }  
 GROUP BY ?partido ?nome ?name ?militante
+
+versão alternativa:
+
+SELECT ?n (COUNT(?militante) AS ?nmilitante) WHERE {
+  ?p a :Partido;
+  :nome ?n;
+  :temMilitante ?militante;
+}
+group by ?p ?n
 ```
 
 ### Output
