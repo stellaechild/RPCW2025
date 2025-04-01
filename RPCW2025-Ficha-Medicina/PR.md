@@ -1,0 +1,1 @@
+info sobre exercicio
