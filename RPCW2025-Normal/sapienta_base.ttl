@@ -1,0 +1,219 @@
+@prefix : <http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18/> .
+
+<http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#aborda
+:aborda rdf:type owl:ObjectProperty ;
+        owl:inverseOf :eEstudadoEm ;
+        rdfs:domain :Disciplina ;
+        rdfs:range :Conceito .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#aprende
+:aprende rdf:type owl:ObjectProperty ;
+         owl:inverseOf :aprendidaPor ;
+         rdfs:domain :Aprendiz ;
+         rdfs:range :Disciplina .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#aprendidaPor
+:aprendidaPor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Disciplina ;
+              rdfs:range :Aprendiz .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#conceitoEnsinadoPor
+:conceitoEnsinadoPor rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :ensinaConceito ;
+                     rdfs:domain :Conceito ;
+                     rdfs:range :Mestre .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#descobriu
+:descobriu rdf:type owl:ObjectProperty ;
+           rdfs:domain :PeríodoHistorico ;
+           rdfs:range :Conceito .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#eEstudadoEm
+:eEstudadoEm rdf:type owl:ObjectProperty ;
+             rdfs:domain :Conceito ;
+             rdfs:range :Disciplina .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensina
+:ensina rdf:type owl:ObjectProperty ;
+        owl:inverseOf :ensinadaPor ;
+        rdfs:domain :Mestre ;
+        rdfs:range :Disciplina .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinaConceito
+:ensinaConceito rdf:type owl:ObjectProperty ;
+                rdfs:domain :Mestre ;
+                rdfs:range :Conceito .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinadaPor
+:ensinadaPor rdf:type owl:ObjectProperty ;
+             rdfs:domain :Disciplina ;
+             rdfs:range :Mestre .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinaramMestres
+:ensinaramMestres rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :ensinouEm ;
+                  rdfs:domain :PeríodoHistorico ;
+                  rdfs:range :Mestre .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinouEm
+:ensinouEm rdf:type owl:ObjectProperty ;
+           rdfs:domain :Mestre ;
+           rdfs:range :PeríodoHistorico .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#escreveu
+:escreveu rdf:type owl:ObjectProperty ;
+          owl:inverseOf :foiEscritoPor ;
+          rdfs:domain :Mestre ;
+          rdfs:range :Obra .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#estaRelacionadoCom
+:estaRelacionadoCom rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Conceito ;
+                    rdfs:range :Conceito .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#explica
+:explica rdf:type owl:ObjectProperty ;
+         owl:inverseOf :explicadoEm ;
+         rdfs:domain :Obra ;
+         rdfs:range :Conceito .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#explicadoEm
+:explicadoEm rdf:type owl:ObjectProperty ;
+             rdfs:domain :Conceito ;
+             rdfs:range :Obra .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#foiEscritoPor
+:foiEscritoPor rdf:type owl:ObjectProperty ;
+               rdfs:domain :Obra ;
+               rdfs:range :Mestre .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#pertenceA
+:pertenceA rdf:type owl:ObjectProperty ;
+           owl:inverseOf :pertencenteA ;
+           rdfs:domain :Disciplina ;
+           rdfs:range :TipoDeConhecimento .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#pertencenteA
+:pertencenteA rdf:type owl:ObjectProperty ;
+              rdfs:domain :TipoDeConhecimento ;
+              rdfs:range :Disciplina .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#surgeEm
+:surgeEm rdf:type owl:ObjectProperty ;
+         rdfs:domain :Conceito ;
+         rdfs:range :PeríodoHistorico .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#temAplicacaoEm
+:temAplicacaoEm rdf:type owl:ObjectProperty ;
+                owl:inverseOf :usaConceito ;
+                rdfs:domain :Conceito ;
+                rdfs:range :Aplicação .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#usaConceito
+:usaConceito rdf:type owl:ObjectProperty ;
+             rdfs:domain :Aplicação ;
+             rdfs:range :Conceito .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#idade
+:idade rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Aprendiz .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Aplicação ,
+                  :Conceito ,
+                  :Disciplina ,
+                  :PeríodoHistorico ,
+                  :Pessoa ,
+                  :TipoDeConhecimento ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#titulo
+:titulo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Obra ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Aplicação
+:Aplicação rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Aprendiz
+:Aprendiz rdf:type owl:Class ;
+          rdfs:subClassOf :Pessoa .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Conceito
+:Conceito rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Disciplina
+:Disciplina rdf:type owl:Class ;
+            rdfs:subClassOf :TipoDeConhecimento .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Mestre
+:Mestre rdf:type owl:Class ;
+        rdfs:subClassOf :Pessoa .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Obra
+:Obra rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#PeríodoHistorico
+:PeríodoHistorico rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#TipoDeConhecimento
+:TipoDeConhecimento rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
