@@ -35,12 +35,14 @@
 ###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#conceitoEnsinadoPor
 :conceitoEnsinadoPor rdf:type owl:ObjectProperty ;
                      owl:inverseOf :ensinaConceito ;
+                     rdf:type owl:TransitiveProperty ;
                      rdfs:domain :Conceito ;
                      rdfs:range :Mestre .
 
 
 ###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#descobriu
 :descobriu rdf:type owl:ObjectProperty ;
+           owl:inverseOf :surgeEm ;
            rdfs:domain :PeríodoHistorico ;
            rdfs:range :Conceito .
 
@@ -59,7 +61,8 @@
 
 
 ###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinaConceito
-:ensinaConceito rdf:type owl:ObjectProperty ;
+:ensinaConceito rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
                 rdfs:domain :Mestre ;
                 rdfs:range :Conceito .
 
@@ -70,15 +73,9 @@
              rdfs:range :Mestre .
 
 
-###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinaramMestres
-:ensinaramMestres rdf:type owl:ObjectProperty ;
-                  owl:inverseOf :ensinouEm ;
-                  rdfs:domain :PeríodoHistorico ;
-                  rdfs:range :Mestre .
-
-
 ###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#ensinouEm
 :ensinouEm rdf:type owl:ObjectProperty ;
+           owl:inverseOf :teveMestres ;
            rdfs:domain :Mestre ;
            rdfs:range :PeríodoHistorico .
 
@@ -139,6 +136,12 @@
                 owl:inverseOf :usaConceito ;
                 rdfs:domain :Conceito ;
                 rdfs:range :Aplicação .
+
+
+###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#teveMestres
+:teveMestres rdf:type owl:ObjectProperty ;
+             rdfs:domain :PeríodoHistorico ;
+             rdfs:range :Mestre .
 
 
 ###  http://www.semanticweb.org/mirtilo/ontologies/2025/untitled-ontology-18#usaConceito
