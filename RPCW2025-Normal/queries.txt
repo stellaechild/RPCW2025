@@ -1,0 +1,130 @@
+Quais são os conceitos ensinados por um determinado mestre (arbitra um)?
+
+SELECT ?conceito 
+WHERE{
+    ?m :nome "Aristóteles";
+       :ensinaConceito ?conceito.
+}
+ORDERBY ?conceito
+
+
+Que obras explicam o conceito de "Relatividade"?
+
+SELECT ?obra
+WHERE{
+    ?o :titulo ?obra;
+       :explicadoEm "Relatividade".
+}
+ORDERBY ?obra
+
+
+Em que disciplinas se estudam "Ciências Sociais"?
+
+SELECT ?disciplina
+WHERE{
+    ?disciplina :a ?Disciplina;
+                :pertenceA "Ciências Sociais".
+}
+ORDERBY ?disciplina
+
+
+Qual é a aplicação prática dos conhecimentos em "Lógica Formal"?
+
+SELECT ?aplic
+WHERE{
+    ?aplic :a ?Aplicação;
+           :usaConceito "Lógica Formal".
+}
+
+
+Quais disciplinas pertencem ao tipo de conhecimento "Ciências Exatas"?
+
+SELECT ?dis
+WHERE{
+    ?dis :a ?Disciplina;
+           :pertenceA "Lógica Formal".
+}
+
+Que mestres ensinaram no século XIX?
+
+SELECT ?mest ?p
+WHERE{
+    ?mest :a ?Mestre;
+          :ensinouEm ?p;
+}
+ORDERBY ?p 
+
+
+Que aprendizes estudam "Programação"?
+
+SELECT ?a 
+WHERE{
+    ?a :a ?Aprendiz;
+          :aprende "Programação".
+}
+ORDERBY ?a 
+
+Qual a distribuição de aprendizes por disciplina? (Resultado será uma lista de pares: Disciplina,
+número de alunos)
+
+SELECT ?a ?dis
+WHERE{
+    ?a :a ?Aprendiz;
+          :aprende ?dis.
+}
+ORDERBY ?a ?dis
+
+
+Qual a distribuição de conceitos por período histórico? (Resultado será uma lista de pares:
+Período, número de conceitos)
+
+SELECT ?p (count(?conceito) as ?nconceito)
+WHERE{
+    ?p :a ?PeríodoHistorico;
+          :descobriu ?conceito.
+}
+ORDERBY ?p ?nconceito
+
+Quais os títulos das obras associadas a cada conceito? (Resultado será uma lista de pares:
+Conceito, Lista de títulos de obras)
+
+SELECT ?obra ?conceito ?titulo
+WHERE{
+    ?conceito :a :Conceito;
+              :explicadoEm ?obra.
+    ?obra :titulo ?titulo.
+}
+ORDERBY ?conceito ?titulo
+
+Quais os aprendizes que frequentam cada uma das disciplinas? (Resultado será uma lista de
+pares: Disciplina, Lista dos nomes dos aprendizes que frequentam a disciplina)
+
+SELECT ?nomea ?nomed ?aprendiz ?disciplina
+WHERE{
+    ?aprendiz :a :Aprendiz;
+              :aprende ?disciplina;
+              :nome ?nomea.
+    ?disciplina :nome ?nomed.
+}
+ORDERBY ?nomed ?nomea
+
+Qual a distribuição de aprendizes por escalões etários? (Resultado será uma lista de pares:
+Escalão etário, número aprendizes nesse escalão); Considera os seguintes escalões: [17, 34], [35,
+44], [45, 54], [55, 64], [65, 74], [75, 100].
+
+Com a utilização de queries CONSTRUCT e queries INSERT, vais calcular novo conhecimento e
+nalguns casos acrescentar esse conhecimento à ontologia:
+
+
+Cria uma nova relação na ontologia, estudaCom, que relaciona um aluno com um mestre;
+
+
+Cria uma query CONSTRUCT para calcular os novos triplos da nova relação estudaCom;
+Altera a query para uma query INSERT e acrescenta esses triplos à ontologia;
+
+
+ Cria uma nova relação na ontologia, dáBasesPara, que relaciona uma disciplina com uma
+aplicação;
+
+Cria uma query CONSTRUCT para calcular os novos triplos da nova relação dáBasesPara;
+Altera a query para uma query INSERT e acrescenta esses triplos à ontologia.
